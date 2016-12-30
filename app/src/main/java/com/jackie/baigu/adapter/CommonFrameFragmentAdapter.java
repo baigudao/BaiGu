@@ -39,7 +39,7 @@ public class CommonFrameFragmentAdapter extends BaseAdapter {
         TextView textView = new TextView(mContext);
         textView.setPadding(10,10,0,10);
         textView.setTextColor(Color.BLACK);
-        textView.setTextSize(20);
+        textView.setTextSize(18);
         textView.setText(mDatas[position]);
         return textView;
     }

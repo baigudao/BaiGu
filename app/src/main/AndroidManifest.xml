@@ -15,7 +15,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.MainActivity"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />  <!--解决横竖屏切换带来的内容重叠问题-->
 
     </application>
 

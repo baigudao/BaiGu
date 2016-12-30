@@ -18,6 +18,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2016/12/29.
+ * 主页面
  */
 public class MainActivity extends FragmentActivity {
 
@@ -72,12 +73,10 @@ public class MainActivity extends FragmentActivity {
                     position = 0;
                     break;
             }
-
             //根据位置得到对应的Fragment
             BaseFragment to = getFragment();
             //替换
             switchFrament(mContent, to);
-
         }
     }
 
@@ -114,19 +113,7 @@ public class MainActivity extends FragmentActivity {
                 }
             }
         }
-
     }
-
-//    private void switchFrament(BaseFragment fragment) {
-//        //1.得到FragmentManger
-//        FragmentManager fm = getSupportFragmentManager();
-//        //2.开启事务
-//        FragmentTransaction transaction = fm.beginTransaction();
-//        //3.替换
-//        transaction.replace(R.id.fl_content, fragment);
-//        //4.提交事务
-//        transaction.commit();
-//    }
 
     /**
      * 根据位置得到对应的Fragment
@@ -149,6 +136,5 @@ public class MainActivity extends FragmentActivity {
     private void initView() {
         setContentView(R.layout.activity_main);
         mRg_main = (RadioGroup) findViewById(R.id.rg_main);
-
     }
 }

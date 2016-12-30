@@ -15,12 +15,8 @@ import com.jackie.baigu.adapter.CommonFrameFragmentAdapter;
 public class CommonFrameFragment extends BaseFragment {
 
     private ListView mListView;
-
     private String[] datas;
-
     private CommonFrameFragmentAdapter adapter;
-
-
     private static final String TAG = CommonFrameFragment.class.getSimpleName();//"CommonFrameFragment"
 
     @Override

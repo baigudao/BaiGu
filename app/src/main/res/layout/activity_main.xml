@@ -7,12 +7,14 @@
     <!--标题栏-->
     <include layout="@layout/titlebar" />
 
+    <!--FrameLayout-->
     <FrameLayout
         android:id="@+id/fl_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <!--底部：RadioGroup-->
     <RadioGroup
         android:id="@+id/rg_main"
         android:layout_width="match_parent"
@@ -45,7 +47,6 @@
             style="@style/bottom_tag_style"
             android:drawableTop="@drawable/rb_other_selector"
             android:text="其他" />
-
 
     </RadioGroup>
 
