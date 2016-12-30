@@ -1,5 +1,6 @@
 package com.jackie.baigu.fragment;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -7,6 +8,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.jackie.baigu.R;
+import com.jackie.baigu.activity.OKHttpActivity;
 import com.jackie.baigu.adapter.CommonFrameFragmentAdapter;
 
 /**
@@ -28,6 +30,9 @@ public class CommonFrameFragment extends BaseFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String data =  datas[position];
+                if (data.toLowerCase().equals("okhttp")){
+                    startActivity(new Intent(mContext,OKHttpActivity.class));
+                }
                 Toast.makeText(mContext, "data=="+data, Toast.LENGTH_SHORT).show();
             }
         });

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_get_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get和post请求" />
+
+    <Button
+        android:id="@+id/btn_get_post_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用okhttp-utils的get和post请求" />
+
+    <Button
+        android:id="@+id/btn_downLoadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载大文件" />
+
+    <Button
+        android:id="@+id/btn_upLoadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上传多个文件" />
+
+    <Button
+        android:id="@+id/btn_downLoadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请求图片" />
+
+    <Button
+        android:id="@+id/btn_downLoadListImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请求列表图片" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示请求数据" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jackie.baigu">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -18,6 +21,9 @@
         <activity
             android:name=".activity.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />  <!--解决横竖屏切换带来的内容重叠问题-->
+
+        <activity android:name=".activity.OKHttpActivity"/>
+        <activity android:name=".activity.OKHttpListActivity"/>
 
     </application>
 
