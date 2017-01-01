@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.jackie.baigu.R;
 import com.jackie.baigu.json.entity.DataInfo;
+import com.jackie.baigu.json.entity.FilmInfo;
 import com.jackie.baigu.json.entity.ShopInfo;
 
 import org.json.JSONArray;
@@ -74,13 +75,89 @@ public class NativeJsonPraseActivity extends Activity implements View.OnClickLis
                 jsonToJavaOfcomplex();
                 break;
             case R.id.btn_native_special:
-
+                jsonToJavaOfSpecial();
                 break;
             default:
                 break;
         }
     }
 
+    /**
+     * 特殊json数据的解析
+     */
+    private void jsonToJavaOfSpecial() {
+        String json = "{\n" +
+                "    \"code\": 0,\n" +
+                "    \"list\": {\n" +
+                "        \"0\": {\n" +
+                "            \"aid\": \"6008965\",\n" +
+                "            \"author\": \"哔哩哔哩番剧\",\n" +
+                "            \"coins\": 170,\n" +
+                "            \"copyright\": \"Copy\",\n" +
+                "            \"create\": \"2016-08-25 21:34\"\n" +
+                "        },\n" +
+                "        \"1\": {\n" +
+                "            \"aid\": \"6008938\",\n" +
+                "            \"author\": \"哔哩哔哩番剧\",\n" +
+                "            \"coins\": 404,\n" +
+                "            \"copyright\": \"Copy\",\n" +
+                "            \"create\": \"2016-08-25 21:33\"\n" +
+                "        }\n" +
+                "    }\n" +
+                "}";
+        // 创建封装的Java对象
+        FilmInfo filmInfo = new FilmInfo();
+
+        // 2 解析json
+        try {
+            JSONObject jsonObject = new JSONObject(json);
+
+            // 第一层解析
+            int code = jsonObject.optInt("code");
+            JSONObject list = jsonObject.optJSONObject("list");
+
+            // 第一层封装
+            filmInfo.setCode(code);
+            List<FilmInfo.FilmBean> lists = new ArrayList<>();
+            filmInfo.setList(lists);
+
+            // 第二层解析
+            for (int i = 0; i < list.length(); i++) {
+                JSONObject jsonObject1 = list.optJSONObject(i + "");
+
+                if (jsonObject1 != null) {
+                    String aid = jsonObject1.optString("aid");
+
+                    String author = jsonObject1.optString("author");
+
+                    int coins = jsonObject1.optInt("coins");
+
+                    String copyright = jsonObject1.optString("copyright");
+
+                    String create = jsonObject1.optString("create");
+
+                    // 第二层数据封装
+                    FilmInfo.FilmBean filmBean = new FilmInfo.FilmBean();
+                    filmBean.setAid(aid);
+                    filmBean.setAuthor(author);
+                    filmBean.setCoins(coins);
+                    filmBean.setCopyright(copyright);
+                    filmBean.setCreate(create);
+
+                    lists.add(filmBean);
+                }
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        tv_native.setText(json);
+        tv_result.setText(filmInfo.toString());
+    }
+
+    /**
+     * 复杂json数据的解析
+     */
     private void jsonToJavaOfcomplex() {
         String json = "{\n" +
                 "    \"data\": {\n" +
