@@ -1,9 +1,8 @@
-package com.jackie.baigu.activity;
+package com.jackie.baigu.okhttp.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;

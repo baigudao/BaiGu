@@ -1,4 +1,4 @@
-package com.jackie.baigu.adapter;
+package com.jackie.baigu.okhttp.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.jackie.baigu.R;
-import com.jackie.baigu.entity.DataBean;
+import com.jackie.baigu.okhttp.entity.DataBean;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.BitmapCallback;
 

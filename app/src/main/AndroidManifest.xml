@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jackie.baigu">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".activity.LauncherActivity">
+        <activity android:name=".LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -19,12 +19,16 @@
         </activity>
 
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />  <!--解决横竖屏切换带来的内容重叠问题-->
 
-        <activity android:name=".activity.OKHttpActivity"/>
-        <activity android:name=".activity.OKHttpListActivity"/>
+        <activity android:name=".okhttp.activity.OKHttpActivity" />
+        <activity android:name=".okhttp.activity.OKHttpListActivity" />
+        <activity android:name=".picasso.activity.PicassoActivity" />
+        <activity android:name=".picasso.activity.PicassoListViewActivity" />
+        <activity android:name=".picasso.activity.PicassoTransformationsActivity" />
 
+        <activity android:name=".json.activity.NativeJsonPraseActivity" />
     </application>
 
 </manifest>

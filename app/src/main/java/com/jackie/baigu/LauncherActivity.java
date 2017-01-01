@@ -1,10 +1,8 @@
-package com.jackie.baigu.activity;
+package com.jackie.baigu;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.jackie.baigu.R;
 
 import java.util.Timer;
 import java.util.TimerTask;

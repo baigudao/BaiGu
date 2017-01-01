@@ -1,4 +1,4 @@
-package com.jackie.baigu.activity;
+package com.jackie.baigu.okhttp.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jackie.baigu.R;
-import com.jackie.baigu.adapter.OKHttpListAdapter;
-import com.jackie.baigu.entity.DataBean;
+import com.jackie.baigu.okhttp.adapter.OKHttpListAdapter;
+import com.jackie.baigu.okhttp.entity.DataBean;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 

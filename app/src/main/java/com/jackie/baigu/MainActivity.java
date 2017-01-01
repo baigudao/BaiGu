@@ -1,4 +1,4 @@
-package com.jackie.baigu.activity;
+package com.jackie.baigu;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

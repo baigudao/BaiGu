@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <Button
+        android:id="@+id/btn_picasso_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本方法使用" />
+
+    <Button
+        android:id="@+id/btn_picasso_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="listview中加载图片" />
+
+    <Button
+        android:id="@+id/btn_picasso_tranformations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片变换" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_picasso_result1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/iv_picasso_result2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/iv_picasso_result3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

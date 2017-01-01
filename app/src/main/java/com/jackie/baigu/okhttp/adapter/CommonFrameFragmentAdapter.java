@@ -1,4 +1,4 @@
-package com.jackie.baigu.adapter;
+package com.jackie.baigu.okhttp.adapter;
 
 import android.content.Context;
 import android.graphics.Color;

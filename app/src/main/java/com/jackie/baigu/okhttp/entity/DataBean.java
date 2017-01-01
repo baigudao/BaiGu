@@ -1,4 +1,4 @@
-package com.jackie.baigu.entity;
+package com.jackie.baigu.okhttp.entity;
 
 import java.util.List;
 

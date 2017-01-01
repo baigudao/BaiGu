@@ -8,8 +8,10 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.jackie.baigu.R;
-import com.jackie.baigu.activity.OKHttpActivity;
-import com.jackie.baigu.adapter.CommonFrameFragmentAdapter;
+import com.jackie.baigu.json.activity.NativeJsonPraseActivity;
+import com.jackie.baigu.okhttp.activity.OKHttpActivity;
+import com.jackie.baigu.okhttp.adapter.CommonFrameFragmentAdapter;
+import com.jackie.baigu.picasso.activity.PicassoActivity;
 
 /**
  * 作用：常用框架Fragment
@@ -32,6 +34,10 @@ public class CommonFrameFragment extends BaseFragment {
                 String data =  datas[position];
                 if (data.toLowerCase().equals("okhttp")){
                     startActivity(new Intent(mContext,OKHttpActivity.class));
+                }else if (data.toLowerCase().equals("picasso")){
+                    startActivity(new Intent(mContext,PicassoActivity.class));
+                }else if (data.toLowerCase().equals("nativejsonprase")){
+                    startActivity(new Intent(mContext,NativeJsonPraseActivity.class));
                 }
                 Toast.makeText(mContext, "data=="+data, Toast.LENGTH_SHORT).show();
             }
@@ -44,7 +50,7 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
-        datas = new String[]{"OKHttp", "xUtils3","Retrofit2","Fresco","Glide","greenDao","RxJava","volley","Gson","FastJson","picasso","evenBus","jcvideoplayer","pulltorefresh","Expandablelistview","UniversalVideoView","....."};
+        datas = new String[]{"OKHttp", "NativeJsonPrase","Gson","FastJson","xUtils3","Retrofit2","Fresco","Glide","greenDao","RxJava","volley","Picasso","evenBus","jcvideoplayer","pulltorefresh","Expandablelistview","UniversalVideoView","....."};
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext,datas);
         mListView.setAdapter(adapter);
