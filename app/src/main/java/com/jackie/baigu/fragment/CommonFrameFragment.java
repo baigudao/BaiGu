@@ -8,6 +8,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.jackie.baigu.R;
+import com.jackie.baigu.gson.activity.GsonActivity;
 import com.jackie.baigu.json.activity.NativeJsonPraseActivity;
 import com.jackie.baigu.okhttp.activity.OKHttpActivity;
 import com.jackie.baigu.okhttp.adapter.CommonFrameFragmentAdapter;
@@ -38,6 +39,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext,PicassoActivity.class));
                 }else if (data.toLowerCase().equals("nativejsonprase")){
                     startActivity(new Intent(mContext,NativeJsonPraseActivity.class));
+                }else if (data.toLowerCase().equals("gson")){
+                    startActivity(new Intent(mContext,GsonActivity.class));
                 }
                 Toast.makeText(mContext, "data=="+data, Toast.LENGTH_SHORT).show();
             }

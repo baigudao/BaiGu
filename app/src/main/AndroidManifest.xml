@@ -27,8 +27,9 @@
         <activity android:name=".picasso.activity.PicassoActivity" />
         <activity android:name=".picasso.activity.PicassoListViewActivity" />
         <activity android:name=".picasso.activity.PicassoTransformationsActivity" />
-
         <activity android:name=".json.activity.NativeJsonPraseActivity" />
+        <activity android:name=".gson.activity.GsonActivity"/>
+
     </application>
 
 </manifest>
