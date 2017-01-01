@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.jackie.baigu.R;
 import com.jackie.baigu.json.entity.ShopInfo;
 
