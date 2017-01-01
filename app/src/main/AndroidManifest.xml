@@ -29,6 +29,7 @@
         <activity android:name=".picasso.activity.PicassoTransformationsActivity" />
         <activity android:name=".json.activity.NativeJsonPraseActivity" />
         <activity android:name=".gson.activity.GsonActivity"/>
+        <activity android:name=".fastjson.activity.FastJsonActivity"/>
 
     </application>
 
