@@ -30,6 +30,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
     compile files('libs/gson-2.7.jar')
     compile files('libs/fastjson-1.1.54.android.jar')
+    compile project(':xutils')
 }
 
 repositories {
