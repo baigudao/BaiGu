@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jackie.baigu.xutils3.XUtils3Activity">
+
+    <include layout="@layout/titlebar" />
+
+    <Button
+        android:id="@+id/btn_annotation"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xUtils3注解模块" />
+
+    <Button
+        android:id="@+id/btn_net"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xUtils3联网模块" />
+
+    <Button
+        android:id="@+id/btn_image"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xUtils3加载单张图片模块" />
+
+    <Button
+        android:id="@+id/btn_image_list"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xUtils3加载列表图片模块" />
+
+</LinearLayout>

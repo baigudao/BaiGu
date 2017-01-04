@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jackie.baigu">
 
@@ -10,17 +11,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden" />  <!--解决横竖屏切换带来的内容重叠问题-->
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <!-- 解决横竖屏切换带来的内容重叠问题 -->
 
         <activity android:name=".okhttp.activity.OKHttpActivity" />
         <activity android:name=".okhttp.activity.OKHttpListActivity" />
@@ -28,8 +29,11 @@
         <activity android:name=".picasso.activity.PicassoListViewActivity" />
         <activity android:name=".picasso.activity.PicassoTransformationsActivity" />
         <activity android:name=".json.activity.NativeJsonPraseActivity" />
-        <activity android:name=".gson.activity.GsonActivity"/>
-        <activity android:name=".fastjson.activity.FastJsonActivity"/>
+        <activity android:name=".gson.activity.GsonActivity" />
+        <activity android:name=".fastjson.activity.FastJsonActivity" />
+        <activity android:name=".xutils3.XUtils3Activity"/>
+        <activity android:name=".xutils3.annotation.XUtils3Fragment"/>
+        <activity android:name=".xutils3.net.XUtils3NetActivity"/>
 
     </application>
 

@@ -14,6 +14,7 @@ import com.jackie.baigu.json.activity.NativeJsonPraseActivity;
 import com.jackie.baigu.okhttp.activity.OKHttpActivity;
 import com.jackie.baigu.okhttp.adapter.CommonFrameFragmentAdapter;
 import com.jackie.baigu.picasso.activity.PicassoActivity;
+import com.jackie.baigu.xutils3.XUtils3Activity;
 
 /**
  * 作用：常用框架Fragment
@@ -44,6 +45,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext,GsonActivity.class));
                 }else if (data.toLowerCase().equals("fastjson")){
                     startActivity(new Intent(mContext,FastJsonActivity.class));
+                }else if (data.toLowerCase().equals("xutils3")){
+                    startActivity(new Intent(mContext, XUtils3Activity.class));
                 }
                 Toast.makeText(mContext, "data=="+data, Toast.LENGTH_SHORT).show();
             }
