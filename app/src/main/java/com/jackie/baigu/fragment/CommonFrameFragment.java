@@ -17,6 +17,7 @@ import com.jackie.baigu.okhttp.activity.OKHttpActivity;
 import com.jackie.baigu.okhttp.adapter.CommonFrameFragmentAdapter;
 import com.jackie.baigu.picasso.activity.PicassoActivity;
 import com.jackie.baigu.recyclerview.RecyclerViewActivity;
+import com.jackie.baigu.universalvideoview.UniversalVideoViewActivity;
 import com.jackie.baigu.xutils3.XUtils3Activity;
 
 /**
@@ -56,6 +57,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext,GlideActivity.class));
                 }else if (data.toLowerCase().equals("imageloader")){
                     startActivity(new Intent(mContext,ImageLoaderActivity.class));
+                }else if (data.toLowerCase().equals("universalvideoview")){
+                    startActivity(new Intent(mContext,UniversalVideoViewActivity.class));
                 }
                 Toast.makeText(mContext, "data=="+data, Toast.LENGTH_SHORT).show();
             }

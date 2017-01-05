@@ -40,11 +40,13 @@
         <activity android:name=".glide.activity.GlideBaseActivity" />
         <activity android:name=".glide.activity.GlideRecyclerviewActivity" />
         <activity android:name=".glide.activity.GlideTranformationsActivity" />
-        <activity android:name=".imageloader.activity.ImageLoaderActivity"/>
-        <activity android:name=".imageloader.activity.ImageloaderListviewActivity"/>
-        <activity android:name=".imageloader.activity.ImageloaderGridviewActivity"/>
-        <activity android:name=".imageloader.activity.ImageloaderViewpagerActivity"/>
-
+        <activity android:name=".imageloader.activity.ImageLoaderActivity" />
+        <activity android:name=".imageloader.activity.ImageloaderListviewActivity" />
+        <activity android:name=".imageloader.activity.ImageloaderGridviewActivity" />
+        <activity android:name=".imageloader.activity.ImageloaderViewpagerActivity" />
+        <activity
+            android:name=".universalvideoview.UniversalVideoViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
     </application>
 
 </manifest>
