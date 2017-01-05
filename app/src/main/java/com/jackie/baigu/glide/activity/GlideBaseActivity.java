@@ -1,4 +1,4 @@
-package com.jackie.baigu.glide;
+package com.jackie.baigu.glide.activity;
 
 import android.app.Activity;
 import android.net.Uri;

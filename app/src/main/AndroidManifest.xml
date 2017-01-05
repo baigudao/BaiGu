@@ -36,10 +36,14 @@
         <activity android:name=".xutils3.annotation.XUtils3Fragment" />
         <activity android:name=".xutils3.net.XUtils3NetActivity" />
         <activity android:name=".recyclerview.RecyclerViewActivity" />
-        <activity android:name=".glide.GlideActivity" />
-        <activity android:name=".glide.GlideBaseActivity" />
-        <activity android:name=".glide.GlideRecyclerviewActivity" />
-        <activity android:name=".glide.GlideTranformationsActivity" />
+        <activity android:name=".glide.activity.GlideActivity" />
+        <activity android:name=".glide.activity.GlideBaseActivity" />
+        <activity android:name=".glide.activity.GlideRecyclerviewActivity" />
+        <activity android:name=".glide.activity.GlideTranformationsActivity" />
+        <activity android:name=".imageloader.activity.ImageLoaderActivity"/>
+        <activity android:name=".imageloader.activity.ImageloaderListviewActivity"/>
+        <activity android:name=".imageloader.activity.ImageloaderGridviewActivity"/>
+        <activity android:name=".imageloader.activity.ImageloaderViewpagerActivity"/>
 
     </application>
 

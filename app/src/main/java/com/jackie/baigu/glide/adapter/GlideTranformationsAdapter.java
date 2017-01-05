@@ -1,4 +1,4 @@
-package com.jackie.baigu.glide;
+package com.jackie.baigu.glide.adapter;
 
 import android.content.Context;
 import android.graphics.Color;

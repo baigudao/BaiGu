@@ -1,7 +1,6 @@
-package com.jackie.baigu.glide;
+package com.jackie.baigu.glide.adapter;
 
 import android.content.Context;
-import android.provider.MediaStore;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.View;

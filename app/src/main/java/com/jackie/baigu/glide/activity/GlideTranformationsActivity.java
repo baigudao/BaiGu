@@ -1,4 +1,4 @@
-package com.jackie.baigu.glide;
+package com.jackie.baigu.glide.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
 import com.jackie.baigu.R;
+import com.jackie.baigu.glide.adapter.GlideTranformationsAdapter;
 
 public class GlideTranformationsActivity extends Activity {
 
