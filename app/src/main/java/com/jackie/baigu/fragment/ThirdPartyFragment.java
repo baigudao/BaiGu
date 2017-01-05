@@ -6,7 +6,6 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
-
 /**
  * 作用：第三方Fragment
  */
