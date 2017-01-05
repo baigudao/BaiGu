@@ -110,6 +110,7 @@ public class RecyclerViewActivity extends Activity implements View.OnClickListen
                 //设置瀑布流类型效果
                 recyclerview.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
                 break;
+
         }
     }
 }
