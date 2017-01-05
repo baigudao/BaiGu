@@ -11,7 +11,6 @@ import android.widget.TextView;
  */
 public class ThirdPartyFragment extends BaseFragment {
 
-
     private static final String TAG = ThirdPartyFragment.class.getSimpleName();//"CommonFrameFragment"
     private TextView textView;
 
