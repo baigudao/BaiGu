@@ -37,10 +37,10 @@ public class XUtils3Activity extends Activity {
     private void getEvent(View view) {
         switch (view.getId()) {
             case R.id.btn_image:
-                Toast.makeText(XUtils3Activity.this, "哈哈", Toast.LENGTH_SHORT).show();
+                Toast.makeText(XUtils3Activity.this, "该功能还没实现！", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_image_list:
-
+                Toast.makeText(XUtils3Activity.this, "该功能还没实现！", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_annotation:
                 startActivity(new Intent(XUtils3Activity.this, XUtils3Fragment.class));
