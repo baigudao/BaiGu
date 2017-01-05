@@ -36,16 +36,14 @@ public class RecyclerViewActivity extends Activity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initView();
-
         initData();
-
         //设置RecyclerView的适配器
         adapter = new MyRecyclerViewAdapter(RecyclerViewActivity.this, datas);
         recyclerview.setAdapter(adapter);
 
         //LayoutManager
         recyclerview.setLayoutManager(new LinearLayoutManager(RecyclerViewActivity.this, LinearLayoutManager.VERTICAL, false));
-//        recyclerview.scrollToPosition(datas.size()-1);
+//      recyclerview.scrollToPosition(datas.size()-1);//默认选中
 
         //添加RecyclerView的分割线
         recyclerview.addItemDecoration(new DividerListItemDecoration(RecyclerViewActivity.this, DividerListItemDecoration.VERTICAL_LIST));

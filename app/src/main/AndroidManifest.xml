@@ -32,10 +32,10 @@
         <activity android:name=".json.activity.NativeJsonPraseActivity" />
         <activity android:name=".gson.activity.GsonActivity" />
         <activity android:name=".fastjson.activity.FastJsonActivity" />
-        <activity android:name=".xutils3.XUtils3Activity"/>
-        <activity android:name=".xutils3.annotation.XUtils3Fragment"/>
-        <activity android:name=".xutils3.net.XUtils3NetActivity"/>
-        <activity android:name=".recyclerview.RecyclerViewActivity"/>
+        <activity android:name=".xutils3.XUtils3Activity" />
+        <activity android:name=".xutils3.annotation.XUtils3Fragment" />
+        <activity android:name=".xutils3.net.XUtils3NetActivity" />
+        <activity android:name=".recyclerview.RecyclerViewActivity" />
 
     </application>
 

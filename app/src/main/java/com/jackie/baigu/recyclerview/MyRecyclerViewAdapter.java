@@ -97,11 +97,10 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
             iv_icon = (ImageView) itemView.findViewById(R.id.iv_icon);
             tv_title = (TextView) itemView.findViewById(R.id.tv_title);
 
+            //点击某一条数据
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
-//                    Toast.makeText(context, "data=="+datas.get(getLayoutPosition()), Toast.LENGTH_SHORT).show();
                     if (onItemClickListener != null) {
                         onItemClickListener.onItemClick(v, datas.get(getLayoutPosition()));
                     }
@@ -117,19 +116,20 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         }
     }
 
+
+    //下面这个牛x哄哄的东西很吊===>接口回传。我们通常所用的按钮点击事件，就是这样做的。button.setOnClickListener(new View.onClickListener{//重写onClick方法})
     /**
+     * 利用接口回调
      * 点击RecyclerView某条的监听
      */
     public interface OnItemClickListener {
-
         /**
          * 当RecyclerView某个被点击的时候回调
          *
          * @param view 点击item的视图
          * @param data 点击得到的数据
          */
-        public void onItemClick(View view, String data);
-
+        void onItemClick(View view, String data);
     }
 
     private OnItemClickListener onItemClickListener;
