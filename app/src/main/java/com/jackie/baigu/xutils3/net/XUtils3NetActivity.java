@@ -50,28 +50,26 @@ public class XUtils3NetActivity extends Activity {
                 uploadFile();
                 break;
         }
-
     }
 
     /**
      * 文件上传
      */
     private void uploadFile() {
-        RequestParams params = new RequestParams("http://192.168.1.16:8080/FileUpload/FileUploadServlet");
+        RequestParams params = new RequestParams("http://169.254.163.31:8080/FileUpload/FileUploadServlet");
         //以表单方式上传
         params.setMultipart(true);
         //设置上传文件的路径
         params.addBodyParameter("File",new File(Environment.getExternalStorageDirectory()+"/atguigu/480.mp4"),null,"oppo.mp4");
         x.http().post(params, new Callback.ProgressCallback<File>() {
             /**
-             * 当下载成功的时候回调这个方法，并且把下载到哪个路径回传过来
+             * 当上传成功的时候回调这个方法，并且把上传的哪个路径回传过来
              * @param file
              */
             @Override
             public void onSuccess(File file) {
                 Log.e("TAG", "onSuccess==" + file.toString());
                 Toast.makeText(XUtils3NetActivity.this, "onSuccess==" + file.toString(), Toast.LENGTH_SHORT).show();
-
             }
 
             @Override
@@ -104,15 +102,13 @@ public class XUtils3NetActivity extends Activity {
                 progressbar.setMax((int) total);
                 progressbar.setProgress((int) current);
                 Log.e("TAG", "onLoading==" + current + "/" + total + ",isDownloading==" + isDownloading);
-
             }
         });
     }
 
-
     private void downloadFile() {
         RequestParams params = new RequestParams("http://vfx.mtime.cn/Video/2016/09/15/mp4/160915092608935956_480.mp4");
-        //设置保存数据
+        //设置保存数据的路径
         params.setSaveFilePath(Environment.getExternalStorageDirectory() + "/atguigu/480.mp4");
         //设置是否可以立即取消下载
         params.setCancelFast(true);
@@ -123,7 +119,6 @@ public class XUtils3NetActivity extends Activity {
 
         params.setExecutor(new PriorityExecutor(3, true));//自定义线程池,有效的值范围[1, 3], 设置为3时, 可能阻塞图片加载.
 
-
         x.http().get(params, new Callback.ProgressCallback<File>() {
             /**
              * 当下载成功的时候回调这个方法，并且把下载到哪个路径回传过来
@@ -133,7 +128,6 @@ public class XUtils3NetActivity extends Activity {
             public void onSuccess(File file) {
                 Log.e("TAG","onSuccess=="+file.toString());
                 Toast.makeText(XUtils3NetActivity.this, "onSuccess=="+file.toString(), Toast.LENGTH_SHORT).show();
-
             }
 
             @Override
@@ -166,7 +160,6 @@ public class XUtils3NetActivity extends Activity {
                 progressbar.setMax((int) total);
                 progressbar.setProgress((int) current);
                 Log.e("TAG", "onLoading=="+current+"/"+total+",isDownloading=="+isDownloading);
-
             }
         });
     }
