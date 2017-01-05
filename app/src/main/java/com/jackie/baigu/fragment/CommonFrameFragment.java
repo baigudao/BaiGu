@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.jackie.baigu.R;
 import com.jackie.baigu.fastjson.activity.FastJsonActivity;
+import com.jackie.baigu.glide.GlideActivity;
 import com.jackie.baigu.gson.activity.GsonActivity;
 import com.jackie.baigu.json.activity.NativeJsonPraseActivity;
 import com.jackie.baigu.okhttp.activity.OKHttpActivity;
@@ -50,6 +51,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, XUtils3Activity.class));
                 }else if (data.toLowerCase().equals("recyclerview")){
                     startActivity(new Intent(mContext, RecyclerViewActivity.class));
+                }else if (data.toLowerCase().equals("glide")){
+                    startActivity(new Intent(mContext,GlideActivity.class));
                 }
                 Toast.makeText(mContext, "data=="+data, Toast.LENGTH_SHORT).show();
             }
@@ -62,7 +65,7 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
-        datas = new String[]{"OKHttp", "NativeJsonPrase","Gson","FastJson","xUtils3","RecyclerView","Retrofit2","Fresco","Glide","greenDao","RxJava","volley","Picasso","evenBus","jcvideoplayer","pulltorefresh","Expandablelistview","UniversalVideoView","....."};
+        datas = new String[]{"OKHttp", "NativeJsonPrase","Gson","FastJson","xUtils3","RecyclerView","Retrofit2","Fresco","Glide","Picasso","greenDao","RxJava","volley","evenBus","jcvideoplayer","pulltorefresh","Expandablelistview","UniversalVideoView","....."};
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext,datas);
         mListView.setAdapter(adapter);

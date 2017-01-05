@@ -36,6 +36,10 @@
         <activity android:name=".xutils3.annotation.XUtils3Fragment" />
         <activity android:name=".xutils3.net.XUtils3NetActivity" />
         <activity android:name=".recyclerview.RecyclerViewActivity" />
+        <activity android:name=".glide.GlideActivity" />
+        <activity android:name=".glide.GlideBaseActivity" />
+        <activity android:name=".glide.GlideRecyclerviewActivity" />
+        <activity android:name=".glide.GlideTranformationsActivity" />
 
     </application>
 
