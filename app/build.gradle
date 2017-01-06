@@ -37,6 +37,9 @@ dependencies {
     compile 'jp.wasabeef:glide-transformations:2.0.1'
     compile files('libs/universal-image-loader-1.9.5.jar')
     compile project(':universalvideoview')
+    compile project(':PullToRefresh_library')
+    compile project(':pullToRefreshListFragment')
+    compile project(':pullToRefreshViewPager')
 }
 
 repositories {
