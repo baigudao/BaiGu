@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\BaiGu\\PullToRefresh_library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\BaiGu\\PullToRefresh_library\\unspecified\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\BaiGu\\PullToRefresh_library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    }
+]
