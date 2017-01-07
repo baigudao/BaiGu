@@ -47,7 +47,7 @@ public class EventBusSendActivity extends Activity {
         bt_eventbus_send_sticky.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isFirstFlag) {
+                if (isFirstFlag) {
                     isFirstFlag = false;
                     // 4 注册
                     EventBus.getDefault().register(EventBusSendActivity.this);
@@ -59,7 +59,7 @@ public class EventBusSendActivity extends Activity {
 
     // 3 接收粘性事件
     @Subscribe(threadMode = ThreadMode.MAIN, sticky = true)
-    public void StickyEventBus(StickyEvent event){
+    public void StickyEventBus(StickyEvent event) {
         // 显示接收的数据
         tv_eventbus_send_result.setText(event.msg);
     }
@@ -69,10 +69,10 @@ public class EventBusSendActivity extends Activity {
     }
 
     private void initView() {
-        tv_title = (TextView)findViewById(R.id.tv_title);
-        bt_eventbus_send_main = (Button)findViewById(R.id.bt_eventbus_send_main);
-        bt_eventbus_send_sticky = (Button)findViewById(R.id.bt_eventbus_send_sticky);
-        tv_eventbus_send_result = (TextView)findViewById(R.id.tv_eventbus_send_result);
+        tv_title = (TextView) findViewById(R.id.tv_title);
+        bt_eventbus_send_main = (Button) findViewById(R.id.bt_eventbus_send_main);
+        bt_eventbus_send_sticky = (Button) findViewById(R.id.bt_eventbus_send_sticky);
+        tv_eventbus_send_result = (TextView) findViewById(R.id.tv_eventbus_send_result);
     }
 
     @Override
