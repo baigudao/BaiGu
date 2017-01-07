@@ -47,6 +47,7 @@
         <activity
             android:name=".universalvideoview.UniversalVideoViewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />
+
         <activity android:name=".android_pulltorefresh.PullToRefreshMainActivity" />
         <activity android:name=".android_pulltorefresh.PullToRefreshListActivity" />
         <activity android:name=".android_pulltorefresh.PullToRefreshGridActivity" />
@@ -54,6 +55,19 @@
         <activity android:name=".android_pulltorefresh.PullToRefreshListInViewPagerActivity" />
         <activity android:name=".android_pulltorefresh.PullToRefreshViewPagerActivity" />
         <activity android:name=".android_pulltorefresh.PullToRefreshWebViewActivity" />
+
+        <activity android:name=".fresco.FrescoActivity" />
+        <activity android:name=".fresco.FrescoSpimgActivity" />
+        <activity android:name=".fresco.FrescoCropActivity" />
+        <activity android:name=".fresco.FrescoCircleAndCornerActivity" />
+        <activity android:name=".fresco.FrescoJpegActivity" />
+        <activity android:name=".fresco.FrescoGifAcitivity" />
+        <activity android:name=".fresco.FrescoMultiActivity" />
+        <activity android:name=".fresco.FrescoListenerActivity" />
+        <activity android:name=".fresco.FrescoResizeActivity" />
+        <activity android:name=".fresco.FrescoModifyActivity" />
+        <activity android:name=".fresco.FrescoAutoSizeActivity"/>
+
     </application>
 
 </manifest>

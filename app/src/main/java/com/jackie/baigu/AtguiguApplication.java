@@ -3,6 +3,7 @@ package com.jackie.baigu;
 import android.app.Application;
 import android.content.Context;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -25,7 +26,15 @@ public class AtguiguApplication extends Application {
 
         // 初始化Imageloader
         initImageloader(this);
+
+        // 初始化Fresco
+        initFresco();
     }
+
+    private void initFresco() {
+        Fresco.initialize(this);
+    }
+
 
     private void initImageloader(Context context) {
 

@@ -9,32 +9,24 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Android-PullToRefresh" />
             <option value="$PROJECT_DIR$/PullToRefresh_library" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/okhttputils" />
             <option value="$PROJECT_DIR$/pullToRefreshListFragment" />
             <option value="$PROJECT_DIR$/pullToRefreshViewPager" />
-            <option value="$PROJECT_DIR$/sample-okhttp" />
             <option value="$PROJECT_DIR$/universalvideoview" />
-            <option value="$PROJECT_DIR$/universalvideoviewsample" />
-            <option value="$PROJECT_DIR$/xUtils3-sample" />
             <option value="$PROJECT_DIR$/xutils" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Android-PullToRefresh" />
             <option value="$PROJECT_DIR$/PullToRefresh_library" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/okhttputils" />
             <option value="$PROJECT_DIR$/pullToRefreshListFragment" />
             <option value="$PROJECT_DIR$/pullToRefreshViewPager" />
-            <option value="$PROJECT_DIR$/sample-okhttp" />
             <option value="$PROJECT_DIR$/universalvideoview" />
-            <option value="$PROJECT_DIR$/universalvideoviewsample" />
-            <option value="$PROJECT_DIR$/xUtils3-sample" />
             <option value="$PROJECT_DIR$/xutils" />
           </set>
         </option>

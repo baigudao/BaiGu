@@ -5,10 +5,10 @@
     },
     {
         "merged": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
-        "source": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\BaiGu\\library\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+        "source": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\BaiGu\\PullToRefresh_library\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
     },
     {
         "merged": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
-        "source": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\BaiGu\\library\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+        "source": "E:\\android-as-ws\\BaiGu\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\BaiGu\\PullToRefresh_library\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
     }
 ]

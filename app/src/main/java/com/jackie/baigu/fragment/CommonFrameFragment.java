@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.jackie.baigu.R;
 import com.jackie.baigu.android_pulltorefresh.PullToRefreshMainActivity;
 import com.jackie.baigu.fastjson.activity.FastJsonActivity;
+import com.jackie.baigu.fresco.FrescoActivity;
 import com.jackie.baigu.glide.activity.GlideActivity;
 import com.jackie.baigu.gson.activity.GsonActivity;
 import com.jackie.baigu.imageloader.activity.ImageLoaderActivity;
@@ -33,37 +34,39 @@ public class CommonFrameFragment extends BaseFragment {
 
     @Override
     protected View initView() {
-        Log.e(TAG,"常用框架Fragment页面被初始化了...");
-        View view = View.inflate(mContext, R.layout.fragment_common_frame,null);
+        Log.e(TAG, "常用框架Fragment页面被初始化了...");
+        View view = View.inflate(mContext, R.layout.fragment_common_frame, null);
         mListView = (ListView) view.findViewById(R.id.listview);
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String data =  datas[position];
-                if (data.toLowerCase().equals("okhttp")){
-                    startActivity(new Intent(mContext,OKHttpActivity.class));
-                }else if (data.toLowerCase().equals("picasso")){
-                    startActivity(new Intent(mContext,PicassoActivity.class));
-                }else if (data.toLowerCase().equals("nativejsonprase")){
-                    startActivity(new Intent(mContext,NativeJsonPraseActivity.class));
-                }else if (data.toLowerCase().equals("gson")){
-                    startActivity(new Intent(mContext,GsonActivity.class));
-                }else if (data.toLowerCase().equals("fastjson")){
-                    startActivity(new Intent(mContext,FastJsonActivity.class));
-                }else if (data.toLowerCase().equals("xutils3")){
+                String data = datas[position];
+                if (data.toLowerCase().equals("okhttp")) {
+                    startActivity(new Intent(mContext, OKHttpActivity.class));
+                } else if (data.toLowerCase().equals("picasso")) {
+                    startActivity(new Intent(mContext, PicassoActivity.class));
+                } else if (data.toLowerCase().equals("nativejsonprase")) {
+                    startActivity(new Intent(mContext, NativeJsonPraseActivity.class));
+                } else if (data.toLowerCase().equals("gson")) {
+                    startActivity(new Intent(mContext, GsonActivity.class));
+                } else if (data.toLowerCase().equals("fastjson")) {
+                    startActivity(new Intent(mContext, FastJsonActivity.class));
+                } else if (data.toLowerCase().equals("xutils3")) {
                     startActivity(new Intent(mContext, XUtils3Activity.class));
-                }else if (data.toLowerCase().equals("recyclerview")){
+                } else if (data.toLowerCase().equals("recyclerview")) {
                     startActivity(new Intent(mContext, RecyclerViewActivity.class));
-                }else if (data.toLowerCase().equals("glide")){
-                    startActivity(new Intent(mContext,GlideActivity.class));
-                }else if (data.toLowerCase().equals("imageloader")){
-                    startActivity(new Intent(mContext,ImageLoaderActivity.class));
-                }else if (data.toLowerCase().equals("universalvideoview")){
-                    startActivity(new Intent(mContext,UniversalVideoViewActivity.class));
-                }else if(data.toLowerCase().equals("android-pulltorefresh")) {
+                } else if (data.toLowerCase().equals("glide")) {
+                    startActivity(new Intent(mContext, GlideActivity.class));
+                } else if (data.toLowerCase().equals("imageloader")) {
+                    startActivity(new Intent(mContext, ImageLoaderActivity.class));
+                } else if (data.toLowerCase().equals("universalvideoview")) {
+                    startActivity(new Intent(mContext, UniversalVideoViewActivity.class));
+                } else if (data.toLowerCase().equals("android-pulltorefresh")) {
                     startActivity(new Intent(mContext, PullToRefreshMainActivity.class));
+                } else if (data.toLowerCase().equals("fresco")) {
+                    startActivity(new Intent(mContext, FrescoActivity.class));
                 }
-                Toast.makeText(mContext, "data=="+data, Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
             }
         });
         return view;
@@ -74,9 +77,17 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
-        datas = new String[]{"OKHttp", "NativeJsonPrase","Gson","FastJson","xUtils3","RecyclerView","Retrofit2","Fresco","Glide","Picasso","ImageLoader","greenDao","RxJava","volley","evenBus","jcvideoplayer","Android-PullToRefresh","Expandablelistview","UniversalVideoView","....."};
+        datas = new String[]{"网络请求:", "OKHttp", "Volley",
+                "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
+                "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
+                "视图显示:", "RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "OpenDanmaku",
+                "依赖注入:", "ButterKnife",
+                "事件总线:", "EventBus",
+                "数据库:", "GreenDao",
+                "综合框架:", "xUtils3",
+                "....."};
         //设置适配器
-        adapter = new CommonFrameFragmentAdapter(mContext,datas);
+        adapter = new CommonFrameFragmentAdapter(mContext, datas);
         mListView.setAdapter(adapter);
     }
 }
