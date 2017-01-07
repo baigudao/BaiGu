@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.jackie.baigu.R;
 import com.jackie.baigu.android_pulltorefresh.PullToRefreshMainActivity;
+import com.jackie.baigu.eventbus.EventBusActivity;
 import com.jackie.baigu.fastjson.activity.FastJsonActivity;
 import com.jackie.baigu.fresco.FrescoActivity;
 import com.jackie.baigu.glide.activity.GlideActivity;
@@ -65,6 +66,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, PullToRefreshMainActivity.class));
                 } else if (data.toLowerCase().equals("fresco")) {
                     startActivity(new Intent(mContext, FrescoActivity.class));
+                }else if (data.toLowerCase().equals("eventbus")){
+                    startActivity(new Intent(mContext,EventBusActivity.class));
                 }
                 Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
             }
