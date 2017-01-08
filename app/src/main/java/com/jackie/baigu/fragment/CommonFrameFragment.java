@@ -24,6 +24,7 @@ import com.jackie.baigu.opendanmaku.OpenDanmakuMainActivity;
 import com.jackie.baigu.picasso.activity.PicassoActivity;
 import com.jackie.baigu.recyclerview.RecyclerViewActivity;
 import com.jackie.baigu.universalvideoview.UniversalVideoViewActivity;
+import com.jackie.baigu.volley.VolleyActivity;
 import com.jackie.baigu.xutils3.XUtils3Activity;
 
 /**
@@ -69,15 +70,18 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, PullToRefreshMainActivity.class));
                 } else if (data.toLowerCase().equals("fresco")) {
                     startActivity(new Intent(mContext, FrescoActivity.class));
-                }else if (data.toLowerCase().equals("eventbus")){
-                    startActivity(new Intent(mContext,EventBusActivity.class));
-                }else if (data.toLowerCase().equals("butterknife")){
+                } else if (data.toLowerCase().equals("eventbus")) {
+                    startActivity(new Intent(mContext, EventBusActivity.class));
+                } else if (data.toLowerCase().equals("butterknife")) {
                     startActivity(new Intent(mContext, ButterknifeActivity.class));
-                }else if (data.toLowerCase().equals("opendanmaku")){
+                } else if (data.toLowerCase().equals("opendanmaku")) {
                     startActivity(new Intent(mContext, OpenDanmakuMainActivity.class));
-                }else if (data.toLowerCase().equals("countdownview")){
+                } else if (data.toLowerCase().equals("countdownview")) {
                     startActivity(new Intent(mContext, CountdownViewMainActivity.class));
+                } else if (data.toLowerCase().equals("volley")) {
+                    startActivity(new Intent(mContext, VolleyActivity.class));
                 }
+                // 点击位置的显示
                 Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
             }
         });
@@ -92,7 +96,7 @@ public class CommonFrameFragment extends BaseFragment {
         datas = new String[]{"网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
                 "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
-                "视图显示:", "RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "OpenDanmaku","CountdownView",
+                "视图显示:", "RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "OpenDanmaku", "CountdownView",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "GreenDao",
