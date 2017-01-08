@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.jackie.baigu.R;
 import com.jackie.baigu.afinal.AfinalActivity;
 import com.jackie.baigu.android_pulltorefresh.PullToRefreshMainActivity;
+import com.jackie.baigu.banner.activity.BannerMainActivity;
 import com.jackie.baigu.butterknife.ButterknifeActivity;
 import com.jackie.baigu.countdownview.CountdownViewMainActivity;
 import com.jackie.baigu.eventbus.EventBusActivity;
@@ -83,6 +84,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, VolleyActivity.class));
                 }else if (data.toLowerCase().equals("afinal")){
                     startActivity(new Intent(mContext, AfinalActivity.class));
+                }else if (data.toLowerCase().equals("banner")){
+                    startActivity(new Intent(mContext, BannerMainActivity.class));
                 }
                 // 点击位置的显示
                 Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
@@ -99,7 +102,7 @@ public class CommonFrameFragment extends BaseFragment {
         datas = new String[]{"网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
                 "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
-                "视图显示:", "RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "OpenDanmaku", "CountdownView",
+                "视图显示:", "Banner","RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "OpenDanmaku", "CountdownView",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "GreenDao",

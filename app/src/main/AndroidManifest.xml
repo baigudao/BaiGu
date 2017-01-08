@@ -87,8 +87,16 @@
 
         <activity android:name=".volley.VolleyActivity" />
 
-        <activity android:name=".afinal.AfinalActivity"/>
+        <activity android:name=".afinal.AfinalActivity" />
 
-    </application>
+        <activity
+            android:name=".banner.activity.BannerMainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".banner.activity.BannerAnimationActivity" />
+        <activity android:name=".banner.activity.BannerStyleActivity" />
+        <activity android:name=".banner.activity.IndicatorPositionActivity" />
+        <activity android:name=".banner.activity.CustomBannerActivity" />
 
-</manifest>
+</application>
+
+    </manifest>
