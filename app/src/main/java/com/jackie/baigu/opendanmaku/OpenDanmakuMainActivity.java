@@ -52,15 +52,12 @@ public class OpenDanmakuMainActivity extends Activity implements View.OnClickLis
 
         //设置相关播放视频
         setVideoView();
-
         //设置标题
         textView.setText("OpenDanmaku弹幕");
-
         //重点
         List<IDanmakuItem> list = initItems();
         //变成随机数据
         Collections.shuffle(list);
-
         //添加到弹幕控件里面
         mDanmakuView.addItem(list, true);
 
