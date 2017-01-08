@@ -86,6 +86,9 @@
         <activity android:name=".countdownview.CountdownViewRecyclerViewActivity" />
 
         <activity android:name=".volley.VolleyActivity" />
+
+        <activity android:name=".afinal.AfinalActivity"/>
+
     </application>
 
 </manifest>

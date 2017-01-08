@@ -8,6 +8,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.jackie.baigu.R;
+import com.jackie.baigu.afinal.AfinalActivity;
 import com.jackie.baigu.android_pulltorefresh.PullToRefreshMainActivity;
 import com.jackie.baigu.butterknife.ButterknifeActivity;
 import com.jackie.baigu.countdownview.CountdownViewMainActivity;
@@ -80,6 +81,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, CountdownViewMainActivity.class));
                 } else if (data.toLowerCase().equals("volley")) {
                     startActivity(new Intent(mContext, VolleyActivity.class));
+                }else if (data.toLowerCase().equals("afinal")){
+                    startActivity(new Intent(mContext, AfinalActivity.class));
                 }
                 // 点击位置的显示
                 Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
@@ -100,7 +103,7 @@ public class CommonFrameFragment extends BaseFragment {
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "GreenDao",
-                "综合框架:", "xUtils3",
+                "综合框架:", "xUtils3","Afinal",
                 "....."};
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext, datas);
