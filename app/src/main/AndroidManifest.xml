@@ -77,6 +77,14 @@
             android:name=".opendanmaku.OpenDanmakuMainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />
 
+
+        <activity
+            android:name=".countdownview.CountdownViewMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".countdownview.DynamicShowActivity" />
+        <activity android:name=".countdownview.CountdownViewListViewActivity" />
+        <activity android:name=".countdownview.CountdownViewRecyclerViewActivity" />
+
     </application>
 
 </manifest>

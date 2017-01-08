@@ -1,4 +1,4 @@
-include ':app', ':okhttputils', ':xutils', ':universalvideoview', ':opendanmaku'
+include ':app', ':okhttputils', ':xutils', ':universalvideoview', ':opendanmaku', 'CountdownView_library'
 include ':PullToRefresh_library'
 include ':pullToRefreshListFragment'
 include ':pullToRefreshViewPager'

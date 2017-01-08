@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.jackie.baigu.R;
 import com.jackie.baigu.android_pulltorefresh.PullToRefreshMainActivity;
 import com.jackie.baigu.butterknife.ButterknifeActivity;
+import com.jackie.baigu.countdownview.CountdownViewMainActivity;
 import com.jackie.baigu.eventbus.EventBusActivity;
 import com.jackie.baigu.fastjson.activity.FastJsonActivity;
 import com.jackie.baigu.fresco.FrescoActivity;
@@ -74,6 +75,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, ButterknifeActivity.class));
                 }else if (data.toLowerCase().equals("opendanmaku")){
                     startActivity(new Intent(mContext, OpenDanmakuMainActivity.class));
+                }else if (data.toLowerCase().equals("countdownview")){
+                    startActivity(new Intent(mContext, CountdownViewMainActivity.class));
                 }
                 Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
             }
