@@ -19,6 +19,7 @@ import com.jackie.baigu.fresco.FrescoActivity;
 import com.jackie.baigu.glide.activity.GlideActivity;
 import com.jackie.baigu.gson.activity.GsonActivity;
 import com.jackie.baigu.imageloader.activity.ImageLoaderActivity;
+import com.jackie.baigu.jiecaovideoplayer.activity.JieCaoVideoPlayerMainActivity;
 import com.jackie.baigu.json.activity.NativeJsonPraseActivity;
 import com.jackie.baigu.okhttp.activity.OKHttpActivity;
 import com.jackie.baigu.okhttp.adapter.CommonFrameFragmentAdapter;
@@ -86,6 +87,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, AfinalActivity.class));
                 }else if (data.toLowerCase().equals("banner")){
                     startActivity(new Intent(mContext, BannerMainActivity.class));
+                }else if (data.toLowerCase().equals("jiecaovideoplayer")){
+                    startActivity(new Intent(mContext,JieCaoVideoPlayerMainActivity.class));
                 }
                 // 点击位置的显示
                 Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
@@ -102,7 +105,7 @@ public class CommonFrameFragment extends BaseFragment {
         datas = new String[]{"网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
                 "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
-                "视图显示:", "Banner","RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "OpenDanmaku", "CountdownView",
+                "视图显示:", "Banner","RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer","OpenDanmaku", "CountdownView",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "GreenDao",

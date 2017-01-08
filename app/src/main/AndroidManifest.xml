@@ -97,6 +97,47 @@
         <activity android:name=".banner.activity.IndicatorPositionActivity" />
         <activity android:name=".banner.activity.CustomBannerActivity" />
 
-</application>
 
-    </manifest>
+        <activity
+            android:name=".jiecaovideoplayer.activity.JieCaoVideoPlayerMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme"
+
+            ></activity>
+
+        <activity android:name=".jiecaovideoplayer.activity.ListViewActivity" />
+
+        <activity
+            android:name=".jiecaovideoplayer.activity.ListViewNormalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".jiecaovideoplayer.activity.ListViewViewpagerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".jiecaovideoplayer.activity.ListViewMultiHolderActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".jiecaovideoplayer.activity.RecyclerViewNormalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".jiecaovideoplayer.activity.UISmallChangeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".jiecaovideoplayer.activity.WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
