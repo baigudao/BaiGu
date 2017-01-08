@@ -66,12 +66,16 @@
         <activity android:name=".fresco.FrescoListenerActivity" />
         <activity android:name=".fresco.FrescoResizeActivity" />
         <activity android:name=".fresco.FrescoModifyActivity" />
-        <activity android:name=".fresco.FrescoAutoSizeActivity"/>
+        <activity android:name=".fresco.FrescoAutoSizeActivity" />
 
-        <activity android:name=".eventbus.EventBusActivity"/>
-        <activity android:name=".eventbus.EventBusSendActivity"/>
+        <activity android:name=".eventbus.EventBusActivity" />
+        <activity android:name=".eventbus.EventBusSendActivity" />
 
-        <activity android:name=".butterknife.ButterknifeActivity"/>
+        <activity android:name=".butterknife.ButterknifeActivity" />
+
+        <activity
+            android:name=".opendanmaku.OpenDanmakuMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
 
     </application>
 

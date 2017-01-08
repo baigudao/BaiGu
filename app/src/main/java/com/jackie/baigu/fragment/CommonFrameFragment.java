@@ -19,6 +19,7 @@ import com.jackie.baigu.imageloader.activity.ImageLoaderActivity;
 import com.jackie.baigu.json.activity.NativeJsonPraseActivity;
 import com.jackie.baigu.okhttp.activity.OKHttpActivity;
 import com.jackie.baigu.okhttp.adapter.CommonFrameFragmentAdapter;
+import com.jackie.baigu.opendanmaku.OpenDanmakuMainActivity;
 import com.jackie.baigu.picasso.activity.PicassoActivity;
 import com.jackie.baigu.recyclerview.RecyclerViewActivity;
 import com.jackie.baigu.universalvideoview.UniversalVideoViewActivity;
@@ -71,6 +72,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext,EventBusActivity.class));
                 }else if (data.toLowerCase().equals("butterknife")){
                     startActivity(new Intent(mContext, ButterknifeActivity.class));
+                }else if (data.toLowerCase().equals("opendanmaku")){
+                    startActivity(new Intent(mContext, OpenDanmakuMainActivity.class));
                 }
                 Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
             }
@@ -86,7 +89,7 @@ public class CommonFrameFragment extends BaseFragment {
         datas = new String[]{"网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
                 "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
-                "视图显示:", "RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "OpenDanmaku",
+                "视图显示:", "RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "OpenDanmaku","CountdownView",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "GreenDao",
