@@ -70,7 +70,7 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, ImageLoaderActivity.class));
                 } else if (data.toLowerCase().equals("universalvideoview")) {
                     startActivity(new Intent(mContext, UniversalVideoViewActivity.class));
-                } else if (data.toLowerCase().equals("android-pulltorefresh")) {
+                } else if (data.toLowerCase().equals("pulltorefresh")) {
                     startActivity(new Intent(mContext, PullToRefreshMainActivity.class));
                 } else if (data.toLowerCase().equals("fresco")) {
                     startActivity(new Intent(mContext, FrescoActivity.class));
@@ -108,7 +108,7 @@ public class CommonFrameFragment extends BaseFragment {
         datas = new String[]{"网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
                 "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
-                "视图显示:", "Banner","RecyclerView", "Android-PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer","TabLayout&ViewPager","OpenDanmaku", "CountdownView",
+                "视图显示:", "Banner","RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer","TabLayout&ViewPager","OpenDanmaku", "CountdownView",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "GreenDao",

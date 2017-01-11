@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
 
-import com.jackie.baigu.R;
 import com.jackie.baigu.fragment.BaseFragment;
 import com.jackie.baigu.fragment.CommonFrameFragment;
 import com.jackie.baigu.fragment.CustomFragment;
