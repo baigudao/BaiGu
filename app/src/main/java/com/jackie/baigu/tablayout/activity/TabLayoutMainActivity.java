@@ -2,8 +2,8 @@ package com.jackie.baigu.tablayout.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.jackie.baigu.R;
@@ -12,7 +12,7 @@ import com.jackie.baigu.tablayout.fragment.MyFragment;
 
 import java.util.ArrayList;
 
-public class TabLayoutMainActivity extends AppCompatActivity {
+public class TabLayoutMainActivity extends FragmentActivity {
 
     ViewPager viewPager;
     TextView tv_title;
@@ -44,7 +44,5 @@ public class TabLayoutMainActivity extends AppCompatActivity {
         //设置固定的
 //        tabLayout.setTabMode(TabLayout.MODE_FIXED);
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
-
     }
-
 }

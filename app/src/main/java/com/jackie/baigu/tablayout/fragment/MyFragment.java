@@ -19,11 +19,11 @@ public class MyFragment extends Fragment {
     /**
      * 标题
      */
-    private final String title;
+    private  String title;
     /**
      * 内容
      */
-    private final String content;
+    private  String content;
     Context mContext;
     TextView textView;
 
@@ -61,7 +61,6 @@ public class MyFragment extends Fragment {
 
     /**
      * 创建视图
-     *
      * @param inflater
      * @param container
      * @param savedInstanceState
@@ -80,7 +79,6 @@ public class MyFragment extends Fragment {
 
     /**
      * 绑定数据
-     *
      * @param savedInstanceState
      */
     @Override

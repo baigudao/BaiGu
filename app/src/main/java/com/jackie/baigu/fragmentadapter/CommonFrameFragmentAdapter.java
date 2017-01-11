@@ -1,4 +1,4 @@
-package com.jackie.baigu.okhttp.adapter;
+package com.jackie.baigu.fragmentadapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -15,7 +15,7 @@ public class CommonFrameFragmentAdapter extends BaseAdapter {
     private final Context mContext;
     private final String[] mDatas;
 
-    public CommonFrameFragmentAdapter(Context context,String[] datas){
+    public CommonFrameFragmentAdapter(Context context, String[] datas){
         this.mContext = context;
         this.mDatas = datas;
     }

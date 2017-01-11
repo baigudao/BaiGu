@@ -5,7 +5,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.jackie.baigu.R;
 import com.jackie.baigu.afinal.AfinalActivity;
@@ -15,6 +14,7 @@ import com.jackie.baigu.butterknife.ButterknifeActivity;
 import com.jackie.baigu.countdownview.CountdownViewMainActivity;
 import com.jackie.baigu.eventbus.EventBusActivity;
 import com.jackie.baigu.fastjson.activity.FastJsonActivity;
+import com.jackie.baigu.fragmentadapter.CommonFrameFragmentAdapter;
 import com.jackie.baigu.fresco.FrescoActivity;
 import com.jackie.baigu.glide.activity.GlideActivity;
 import com.jackie.baigu.gson.activity.GsonActivity;
@@ -22,7 +22,6 @@ import com.jackie.baigu.imageloader.activity.ImageLoaderActivity;
 import com.jackie.baigu.jiecaovideoplayer.activity.JieCaoVideoPlayerMainActivity;
 import com.jackie.baigu.json.activity.NativeJsonPraseActivity;
 import com.jackie.baigu.okhttp.activity.OKHttpActivity;
-import com.jackie.baigu.okhttp.adapter.CommonFrameFragmentAdapter;
 import com.jackie.baigu.opendanmaku.OpenDanmakuMainActivity;
 import com.jackie.baigu.picasso.activity.PicassoActivity;
 import com.jackie.baigu.recyclerview.RecyclerViewActivity;
@@ -84,17 +83,17 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, CountdownViewMainActivity.class));
                 } else if (data.toLowerCase().equals("volley")) {
                     startActivity(new Intent(mContext, VolleyActivity.class));
-                }else if (data.toLowerCase().equals("afinal")){
+                } else if (data.toLowerCase().equals("afinal")) {
                     startActivity(new Intent(mContext, AfinalActivity.class));
-                }else if (data.toLowerCase().equals("banner")){
+                } else if (data.toLowerCase().equals("banner")) {
                     startActivity(new Intent(mContext, BannerMainActivity.class));
-                }else if (data.toLowerCase().equals("jiecaovideoplayer")){
-                    startActivity(new Intent(mContext,JieCaoVideoPlayerMainActivity.class));
-                }else if (data.toLowerCase().equals("tablayout&viewpager")){
+                } else if (data.toLowerCase().equals("jiecaovideoplayer")) {
+                    startActivity(new Intent(mContext, JieCaoVideoPlayerMainActivity.class));
+                } else if (data.toLowerCase().equals("tablayout&viewpager")) {
                     startActivity(new Intent(mContext, TabLayoutMainActivity.class));
                 }
                 // 点击位置的显示
-                Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
             }
         });
         return view;
@@ -108,11 +107,11 @@ public class CommonFrameFragment extends BaseFragment {
         datas = new String[]{"网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
                 "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
-                "视图显示:", "Banner","RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer","TabLayout&ViewPager","OpenDanmaku", "CountdownView",
+                "视图显示:", "Banner", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager", "OpenDanmaku", "CountdownView",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "GreenDao",
-                "综合框架:", "xUtils3","Afinal",
+                "综合框架:", "xUtils3", "Afinal",
                 "....."};
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext, datas);

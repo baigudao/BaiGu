@@ -34,7 +34,7 @@
             android:id="@+id/rb_third_party"
             style="@style/bottom_tag_style"
             android:drawableTop="@drawable/rb_third_party_selector"
-            android:text="第三方" />
+            android:text="源码" />
 
         <RadioButton
             android:id="@+id/rb_custom"

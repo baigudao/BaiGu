@@ -10,7 +10,7 @@ import com.jackie.baigu.fragment.BaseFragment;
 import com.jackie.baigu.fragment.CommonFrameFragment;
 import com.jackie.baigu.fragment.CustomFragment;
 import com.jackie.baigu.fragment.OtherFragment;
-import com.jackie.baigu.fragment.ThirdPartyFragment;
+import com.jackie.baigu.fragment.SoundCodeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -127,7 +127,7 @@ public class MainActivity extends FragmentActivity {
     private void initFragment() {
         mBaseFragment = new ArrayList<>();
         mBaseFragment.add(new CommonFrameFragment());//常用框架Fragment
-        mBaseFragment.add(new ThirdPartyFragment());//第三方Fragment
+        mBaseFragment.add(new SoundCodeFragment());//源码Fragment
         mBaseFragment.add(new CustomFragment());//自定义控件Fragment
         mBaseFragment.add(new OtherFragment());//其他Fragment
     }
