@@ -53,7 +53,9 @@ public class TabLayoutSoundCodeMainActivity extends Activity implements View.OnC
                 Toast.makeText(TabLayoutSoundCodeMainActivity.this, "只要在build.gradle中加入：compile 'com.android.support:design:23.4.0'", Toast.LENGTH_LONG).show();
                 break;
             case R.id.btn_remark:
-                Toast.makeText(TabLayoutSoundCodeMainActivity.this, "无", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TabLayoutSoundCodeMainActivity.this, "《在清单文件中》：<activity\n" +
+                        "            android:name=\".tablayout.activity.TabLayoutMainActivity\"\n" +
+                        "            android:theme=\"@style/Theme.AppCompat.Light.NoActionBar\" />", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_main_tablayout:
                 startActivity(new Intent(TabLayoutSoundCodeMainActivity.this,MainSoundCodeActivity.class));

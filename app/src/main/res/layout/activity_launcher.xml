@@ -18,7 +18,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/iv_logo"
         android:layout_centerHorizontal="true"
-        android:text="尚硅谷Android世界..."
+        android:layout_marginTop="10dp"
+        android:text="欢迎来到Android世界..."
         android:textSize="18sp" />
 
 </RelativeLayout>

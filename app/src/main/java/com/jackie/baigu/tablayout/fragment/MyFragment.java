@@ -32,9 +32,9 @@ public class MyFragment extends Fragment {
      *
      * @return
      */
-    public String getContent() {
-        return content;
-    }
+//    public String getContent() {
+//        return content;
+//    }
 
     /**
      * 得到标题

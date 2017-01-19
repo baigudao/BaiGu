@@ -23,6 +23,7 @@ import com.jackie.baigu.jiecaovideoplayer.activity.JieCaoVideoPlayerMainActivity
 import com.jackie.baigu.json.activity.NativeJsonPraseActivity;
 import com.jackie.baigu.okhttp.activity.OKHttpActivity;
 import com.jackie.baigu.opendanmaku.OpenDanmakuMainActivity;
+import com.jackie.baigu.photoview.activity.PhotoViewMainActivity;
 import com.jackie.baigu.picasso.activity.PicassoActivity;
 import com.jackie.baigu.recyclerview.RecyclerViewActivity;
 import com.jackie.baigu.tablayout.activity.TabLayoutMainActivity;
@@ -91,6 +92,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, JieCaoVideoPlayerMainActivity.class));
                 } else if (data.toLowerCase().equals("tablayout&viewpager")) {
                     startActivity(new Intent(mContext, TabLayoutMainActivity.class));
+                }else if (data.toLowerCase().equals("photoview")){
+                    startActivity(new Intent(mContext,PhotoViewMainActivity.class));
                 }
                 // 点击位置的显示
 //                Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
@@ -107,7 +110,7 @@ public class CommonFrameFragment extends BaseFragment {
         datas = new String[]{"网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
                 "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
-                "视图显示:", "Banner", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager", "OpenDanmaku", "CountdownView",
+                "视图显示:", "Banner","PhotoView", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager", "OpenDanmaku", "CountdownView","JPush","ShareSDK",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "GreenDao",

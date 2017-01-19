@@ -8,6 +8,7 @@ import android.widget.ListView;
 
 import com.jackie.baigu.R;
 import com.jackie.baigu.fragmentadapter.SoundCodeFragmentAdapter;
+import com.jackie.baigu.glide.soundcode.GlideSoundCodeMainActivity;
 import com.jackie.baigu.tablayout.soundcode.TabLayoutSoundCodeMainActivity;
 
 /**
@@ -31,6 +32,8 @@ public class SoundCodeFragment extends BaseFragment {
                 String data = datas[position];
                 if (data.toLowerCase().equals("tablayout&viewpager")) {
                     startActivity(new Intent(mContext, TabLayoutSoundCodeMainActivity.class));
+                }else if (data.toLowerCase().equals("glide")){
+                    startActivity(new Intent(mContext,GlideSoundCodeMainActivity.class));
                 }
                 // 点击位置的显示
 //                Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
