@@ -51,7 +51,6 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         //根据位置得到对应的数据
         String data = datas.get(position);
         holder.tv_title.setText(data);
-
     }
 
     /**

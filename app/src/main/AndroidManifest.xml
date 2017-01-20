@@ -47,13 +47,13 @@
         <activity
             android:name=".universalvideoview.UniversalVideoViewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />
-        <activity android:name=".android_pulltorefresh.PullToRefreshMainActivity" />
-        <activity android:name=".android_pulltorefresh.PullToRefreshListActivity" />
-        <activity android:name=".android_pulltorefresh.PullToRefreshGridActivity" />
-        <activity android:name=".android_pulltorefresh.PullToRefreshListFragmentActivity" />
-        <activity android:name=".android_pulltorefresh.PullToRefreshListInViewPagerActivity" />
-        <activity android:name=".android_pulltorefresh.PullToRefreshViewPagerActivity" />
-        <activity android:name=".android_pulltorefresh.PullToRefreshWebViewActivity" />
+        <activity android:name=".pulltorefresh.PullToRefreshMainActivity" />
+        <activity android:name=".pulltorefresh.PullToRefreshListActivity" />
+        <activity android:name=".pulltorefresh.PullToRefreshGridActivity" />
+        <activity android:name=".pulltorefresh.PullToRefreshListFragmentActivity" />
+        <activity android:name=".pulltorefresh.PullToRefreshListInViewPagerActivity" />
+        <activity android:name=".pulltorefresh.PullToRefreshViewPagerActivity" />
+        <activity android:name=".pulltorefresh.PullToRefreshWebViewActivity" />
         <activity android:name=".fresco.FrescoActivity" />
         <activity android:name=".fresco.FrescoSpimgActivity" />
         <activity android:name=".fresco.FrescoCropActivity" />

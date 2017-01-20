@@ -158,7 +158,7 @@ public class PullToRefreshWebView extends PullToRefreshBase<WebView> {
 		}
 
 		private int getScrollRange() {
-			return (int) Math.max(0, (float) Math.floor(mRefreshableView.getContentHeight() * mRefreshableView.getScale())
+			return (int) Math.max(0, Math.floor(mRefreshableView.getContentHeight() * mRefreshableView.getScale())
 					- (getHeight() - getPaddingBottom() - getPaddingTop()));
 		}
 	}

@@ -50,6 +50,7 @@
             android:layout_weight="1"
             android:text="flow"
             android:textAllCaps="false" />
+
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView

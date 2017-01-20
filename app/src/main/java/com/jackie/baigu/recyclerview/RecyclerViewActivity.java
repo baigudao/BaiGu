@@ -37,11 +37,22 @@ public class RecyclerViewActivity extends Activity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         initView();
         initData();
+    }
+
+    private void initData() {
+        //准备数据
+        datas = new ArrayList<>();
+        //准备数据集合
+        for (int i = 0; i < 100; i++) {
+            datas.add("Content_" + i);
+        }
+
         //设置RecyclerView的适配器
         adapter = new MyRecyclerViewAdapter(RecyclerViewActivity.this, datas);
         recyclerview.setAdapter(adapter);
 
         //LayoutManager
+        //设置List类型效果
         recyclerview.setLayoutManager(new LinearLayoutManager(RecyclerViewActivity.this, LinearLayoutManager.VERTICAL, false));
 //      recyclerview.scrollToPosition(datas.size()-1);//默认选中
 
@@ -58,14 +69,6 @@ public class RecyclerViewActivity extends Activity implements View.OnClickListen
 
         //设置动画
         recyclerview.setItemAnimator(new DefaultItemAnimator());
-    }
-
-    private void initData() {
-        datas = new ArrayList<>();
-        //准备数据集合
-        for (int i = 0; i < 100; i++) {
-            datas.add("Content_" + i);
-        }
     }
 
     private void initView() {
