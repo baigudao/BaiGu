@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2017/1/3.
  */
-public class AtguiguApplication extends Application {
+public class MyApplication extends Application {
 
     public static List<?> images = new ArrayList<>();
     public static List<String> titles = new ArrayList<>();
@@ -31,9 +31,7 @@ public class AtguiguApplication extends Application {
     public void onCreate() {
         super.onCreate();
         //初始化xUtils
-        x.Ext.init(this);
-        //是否输出debug日志，开启debug会影响性能
-        x.Ext.setDebug(true);
+        initXUtils();
 
         // 初始化Imageloader
         initImageloader(this);
@@ -41,12 +39,18 @@ public class AtguiguApplication extends Application {
         // 初始化Fresco
         initFresco();
 
-
         //初始化Banner
         initBanner();
     }
 
+    private void initXUtils() {
+        x.Ext.init(this);
+        //是否输出debug日志，开启debug会影响性能
+        x.Ext.setDebug(true);
+    }
+
     private void initBanner() {
+
         H = getScreenH(this);
         Fresco.initialize(this);
 
@@ -57,7 +61,6 @@ public class AtguiguApplication extends Application {
                 .recoverStack(true)
                 .mainPage(MainActivity.class)
                 .init(this);
-
 
         String[] urls = getResources().getStringArray(R.array.url4);
         String[] tips = getResources().getStringArray(R.array.title);
@@ -77,11 +80,9 @@ public class AtguiguApplication extends Application {
         return dm.heightPixels;
     }
 
-
     private void initFresco() {
         Fresco.initialize(this);
     }
-
 
     private void initImageloader(Context context) {
 

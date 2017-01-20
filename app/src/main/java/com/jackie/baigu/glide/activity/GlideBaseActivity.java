@@ -44,7 +44,6 @@ public class GlideBaseActivity extends Activity {
     }
 
     private void initView() {
-
         setContentView(R.layout.activity_glide_base);
         tvTitle = (TextView) findViewById(R.id.tv_title);
         tvGlide1 = (TextView) findViewById(R.id.tv_glide_1);
@@ -72,7 +71,7 @@ public class GlideBaseActivity extends Activity {
 
         //（1）加载网络图片
         tvGlide1.setText("（1）加载网络图片");
-        Glide.with(this).load("http://img1.imgtn.bdimg.com/it/u=2615772929,948758168&fm=21&gp=0.jpg").into(ivGlide1);
+        Glide.with(this).load("http://imglf2.ph.126.net/xf8a2uV5GJbO_s6uZNplew==/2219993141417277467.jpg").into(ivGlide1);
 
         //（2）加载资源图片
         tvGlide2.setText("（2）加载资源图片");
@@ -83,11 +82,11 @@ public class GlideBaseActivity extends Activity {
         String path = Environment.getExternalStorageDirectory() + "/1107210100346.png";
         File file = new File(path);
         Uri uri = Uri.fromFile(file);
-        Glide.with(this).load(uri).into(ivGlide3);
+        Glide.with(this).load(uri).placeholder(R.mipmap.ic_launcher).into(ivGlide3);
 
         // （4）加载网络gif
         tvGlide4.setText("（4）加载网络gif");
-        String gifUrl = "http://b.hiphotos.baidu.com/zhidao/pic/item/faedab64034f78f066abccc57b310a55b3191c67.jpg";
+        String gifUrl = "http://img.zcool.cn/community/01feca56d3c25f32f875520f2310a4.gif";
         Glide.with(this).load(gifUrl).placeholder(R.mipmap.ic_launcher).into(ivGlide4);
 
         // （5）加载资源gif

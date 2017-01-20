@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
-import com.jackie.baigu.AtguiguApplication;
+import com.jackie.baigu.MyApplication;
 import com.jackie.baigu.R;
 import com.jackie.baigu.banner.loader.GlideImageLoader;
 import com.youth.banner.Banner;
@@ -25,7 +25,7 @@ public class IndicatorPositionActivity extends AppCompatActivity implements Adap
         spinnerPosition = (Spinner) findViewById(R.id.spinnerPosition);
         spinnerPosition.setOnItemSelectedListener(this);
 
-        banner.setImages(AtguiguApplication.images)
+        banner.setImages(MyApplication.images)
                 .setImageLoader(new GlideImageLoader())
                 .start();
     }

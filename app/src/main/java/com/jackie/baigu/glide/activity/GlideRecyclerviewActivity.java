@@ -33,6 +33,8 @@ public class GlideRecyclerviewActivity extends Activity {
         // 初始化Recyclerview
         GlideRecyclerviewAdapter glideRecyclerviewAdapter = new GlideRecyclerviewAdapter(this);
         rvGlide.setAdapter(glideRecyclerviewAdapter);
+        //设置布局管理
+        //ListView的效果
         rvGlide.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
     }
 }

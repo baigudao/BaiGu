@@ -24,6 +24,6 @@ public class LauncherActivity extends Activity {
                 startActivity(new Intent(LauncherActivity.this,MainActivity.class));
                 LauncherActivity.this.finish();
             }
-        },2000);
+        },1000);
     }
 }

@@ -37,7 +37,7 @@ public class CommonFrameFragmentAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView textView = new TextView(mContext);
-        textView.setPadding(10,10,0,10);
+        textView.setPadding(15,15,0,15);
         textView.setTextColor(Color.BLACK);
         textView.setTextSize(18);
         textView.setText(mDatas[position]);

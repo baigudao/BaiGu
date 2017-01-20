@@ -3,7 +3,7 @@ package com.jackie.baigu.banner.activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.jackie.baigu.AtguiguApplication;
+import com.jackie.baigu.MyApplication;
 import com.jackie.baigu.R;
 import com.jackie.baigu.banner.loader.GlideImageLoader;
 import com.youth.banner.Banner;
@@ -21,16 +21,16 @@ public class CustomBannerActivity extends AppCompatActivity {
         banner2 = (Banner) findViewById(R.id.banner2);
         banner3 = (Banner) findViewById(R.id.banner3);
 
-        banner1.setImages(AtguiguApplication.images)
+        banner1.setImages(MyApplication.images)
                 .setImageLoader(new GlideImageLoader())
                 .start();
 
-        banner2.setImages(AtguiguApplication.images)
+        banner2.setImages(MyApplication.images)
                 .setImageLoader(new GlideImageLoader())
                 .start();
 
-        banner3.setImages(AtguiguApplication.images)
-                .setBannerTitles(AtguiguApplication.titles)
+        banner3.setImages(MyApplication.images)
+                .setBannerTitles(MyApplication.titles)
                 .setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE)
                 .setImageLoader(new GlideImageLoader())
                 .start();

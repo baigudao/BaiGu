@@ -13,7 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.jackie.baigu.AtguiguApplication;
+import com.jackie.baigu.MyApplication;
 import com.jackie.baigu.R;
 import com.jackie.baigu.banner.adapter.SampleAdapter;
 import com.jackie.baigu.banner.loader.GlideImageLoader;
@@ -64,7 +64,7 @@ public class BannerMainActivity extends AppCompatActivity implements SwipeRefres
         View header = LayoutInflater.from(this).inflate(R.layout.header, null);
         banner = (Banner) header.findViewById(R.id.banner);
         //设置Banner的高和宽
-        banner.setLayoutParams(new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, AtguiguApplication.H / 4));
+        banner.setLayoutParams(new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, MyApplication.H / 4));
 
 
         //Banner以头的方式添加到ListView中
@@ -79,7 +79,7 @@ public class BannerMainActivity extends AppCompatActivity implements SwipeRefres
         listView.setOnItemClickListener(this);
 
         //简单使用--Banner加载图片地址
-        banner.setImages(AtguiguApplication.images)
+        banner.setImages(MyApplication.images)
                 .setImageLoader(new GlideImageLoader())
                 .start();
     }

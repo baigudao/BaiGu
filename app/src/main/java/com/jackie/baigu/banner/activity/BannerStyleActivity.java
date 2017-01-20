@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
-import com.jackie.baigu.AtguiguApplication;
+import com.jackie.baigu.MyApplication;
 import com.jackie.baigu.R;
 import com.jackie.baigu.banner.loader.GlideImageLoader;
 import com.youth.banner.Banner;
@@ -26,8 +26,8 @@ public class BannerStyleActivity extends AppCompatActivity implements AdapterVie
         spinnerStyle.setOnItemSelectedListener(this);
 
         //默认是CIRCLE_INDICATOR
-        banner.setImages(AtguiguApplication.images)
-                .setBannerTitles(AtguiguApplication.titles)
+        banner.setImages(MyApplication.images)
+                .setBannerTitles(MyApplication.titles)
                 .setBannerStyle(BannerConfig.NOT_INDICATOR)
                 .setImageLoader(new GlideImageLoader())
                 .start();

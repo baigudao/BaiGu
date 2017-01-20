@@ -36,7 +36,7 @@ public class GlideRecyclerviewAdapter extends RecyclerView.Adapter<GlideRecycler
             "http://img1.imgtn.bdimg.com/it/u=2432702027,3704029716&fm=21&gp=0.jpg",
             "http://i.imgur.com/syELajx.jpg",
             "http://i.imgur.com/COzBnru.jpg",
-            "http://i.imgur.com1111/Z3QjilA.jpg"
+            "http://img.mp.itc.cn/upload/20160317/31bb097831964444aaeb4c6eb7161ca6.jpg"
     };
 
     public GlideRecyclerviewAdapter(Context context) {
@@ -51,21 +51,19 @@ public class GlideRecyclerviewAdapter extends RecyclerView.Adapter<GlideRecycler
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        // 获取当前item数据
-
-        // 显示数据
+        //图片显示的分辨率 ，像素值
         int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200, mContext.getResources().getDisplayMetrics());
         int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200f, mContext.getResources().getDisplayMetrics());
 
         Glide.with(mContext)
-                .load(mDatas[position])
+                .load(mDatas[position])// 获取当前item数据
                 .placeholder(R.mipmap.ic_launcher) //占位图
                 .error(R.mipmap.ic_launcher)  //出错的占位图
-                .override(width, height) //图片显示的分辨率 ，像素值 可以转化为DP再设置
-                .animate(R.anim.glide_anim)
+                .override(width, height) //图片显示的分辨率 ，像素值 可以转化为dp再设置
+                .animate(R.anim.glide_anim)//设置动画
                 .centerCrop()
                 .fitCenter()
-                .into(holder.image);
+                .into(holder.image);// 显示数据
     }
 
     @Override

@@ -16,7 +16,8 @@
         android:id="@+id/btn_glide_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RecyclerView中加载图片" />
+        android:text="RecyclerView中加载图片"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_glide_transformation"

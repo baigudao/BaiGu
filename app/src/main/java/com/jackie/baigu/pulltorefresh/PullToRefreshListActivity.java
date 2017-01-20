@@ -49,7 +49,9 @@ public final class PullToRefreshListActivity extends ListActivity {
             "Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu", "Airag", "Airedale", "Aisy Cendre",
             "Allgauer Emmentaler"};
 
-    /** Called when the activity is first created. */
+    /**
+     * Called when the activity is first created.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,7 +98,7 @@ public final class PullToRefreshListActivity extends ListActivity {
                 //设置更新时间
                 refreshView.getLoadingLayoutProxy().setLastUpdatedLabel(label);
                 Toast.makeText(PullToRefreshListActivity.this, "下拉刷新", Toast.LENGTH_SHORT).show();
-
+                //模拟耗时操作
                 new GetDataTask().execute();
             }
 
@@ -114,6 +116,7 @@ public final class PullToRefreshListActivity extends ListActivity {
                 //设置更新时间
                 refreshView.getLoadingLayoutProxy().setLastUpdatedLabel(label);
                 Toast.makeText(PullToRefreshListActivity.this, "上拉刷新!", Toast.LENGTH_SHORT).show();
+                //模拟耗时操作
                 new GetDataTask().execute();
             }
 
@@ -177,6 +180,7 @@ public final class PullToRefreshListActivity extends ListActivity {
                 //下拉刷新
                 mListItems.addFirst("刷新请求到的新数据...");
             } else if (mPullRefreshListView.getMode() == PullToRefreshBase.Mode.PULL_FROM_END) {
+                //上拉加载
                 mListItems.addLast("上拉数据请求到了...");
             }
 

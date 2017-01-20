@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.jackie.baigu.AtguiguApplication;
+import com.jackie.baigu.MyApplication;
 import com.jackie.baigu.R;
 import com.jackie.baigu.banner.adapter.SampleAdapter;
 import com.jackie.baigu.banner.loader.GlideImageLoader;
@@ -72,7 +72,7 @@ public class BannerAnimationActivity extends AppCompatActivity implements Adapte
         listView.setOnItemClickListener(this);
 
         //Banner加载数据
-        banner.setImages(AtguiguApplication.images)
+        banner.setImages(MyApplication.images)
                 .setImageLoader(new GlideImageLoader())
                 .start();
 

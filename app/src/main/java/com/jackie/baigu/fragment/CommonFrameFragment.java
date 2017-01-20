@@ -107,9 +107,9 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
-        datas = new String[]{"网络请求:", "OKHttp", "Volley",
+        datas = new String[]{"图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
+                "网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
-                "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
                 "视图显示:", "Banner","PhotoView", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager", "OpenDanmaku", "CountdownView","JPush","ShareSDK","BaiduMapSDK",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
