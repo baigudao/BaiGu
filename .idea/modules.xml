@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BaiGu.iml" filepath="$PROJECT_DIR$/BaiGu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BezierDemo_app/BezierDemo_app.iml" filepath="$PROJECT_DIR$/BezierDemo_app/BezierDemo_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/CountdownView_library/CountdownView_library.iml" filepath="$PROJECT_DIR$/CountdownView_library/CountdownView_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/PhotoView_library/PhotoView_library.iml" filepath="$PROJECT_DIR$/PhotoView_library/PhotoView_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/PhotoView_sample/PhotoView_sample.iml" filepath="$PROJECT_DIR$/PhotoView_sample/PhotoView_sample.iml" />

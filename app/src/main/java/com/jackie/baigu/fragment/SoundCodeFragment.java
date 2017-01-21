@@ -47,13 +47,13 @@ public class SoundCodeFragment extends BaseFragment {
         super.initData();
         Log.e(TAG, "源码Fragment数据被初始化了...");
         //准备数据
-        datas = new String[]{"网络请求:", "OKHttp", "Volley",
+        datas = new String[]{"图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
+                "网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
-                "图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
-                "视图显示:", "Banner", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager", "OpenDanmaku", "CountdownView",
+                "视图显示:", "Banner","PhotoView", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager", "OpenDanmaku", "CountdownView","JPush","ShareSDK","BaiduMapSDK",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
-                "数据库:", "GreenDao",
+                "数据库:", "ORMLite","GreenDao",
                 "综合框架:", "xUtils3", "Afinal",
                 "....."};
         //设置适配器

@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BezierDemo_app" />
             <option value="$PROJECT_DIR$/CountdownView_library" />
             <option value="$PROJECT_DIR$/PhotoView_library" />
             <option value="$PROJECT_DIR$/PhotoView_sample" />
@@ -28,6 +29,7 @@
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BezierDemo_app" />
             <option value="$PROJECT_DIR$/CountdownView_library" />
             <option value="$PROJECT_DIR$/PhotoView_library" />
             <option value="$PROJECT_DIR$/PhotoView_sample" />

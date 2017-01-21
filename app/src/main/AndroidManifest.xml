@@ -124,7 +124,8 @@
         <activity android:name=".glide.soundcode.GlideSoundCodeMainActivity" />
         <activity android:name=".photoview.activity.PhotoViewMainActivity" />
         <activity android:name=".photoview.activity.SimpleSampleActivity" />
-        <activity android:name=".photoview.activity.PicassoSampleActivity"></activity>
+        <activity android:name=".photoview.activity.PicassoSampleActivity"/>
+        <activity android:name=".bezier.BezierMainActivity"/>
     </application>
 
 </manifest>

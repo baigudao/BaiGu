@@ -8,6 +8,7 @@ import android.widget.ListView;
 
 import com.jackie.baigu.R;
 import com.jackie.baigu.afinal.AfinalActivity;
+import com.jackie.baigu.bezier.BezierMainActivity;
 import com.jackie.baigu.pulltorefresh.PullToRefreshMainActivity;
 import com.jackie.baigu.banner.activity.BannerMainActivity;
 import com.jackie.baigu.butterknife.ButterknifeActivity;
@@ -94,6 +95,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, TabLayoutMainActivity.class));
                 }else if (data.toLowerCase().equals("photoview")){
                     startActivity(new Intent(mContext,PhotoViewMainActivity.class));
+                }else if (data.toLowerCase().equals("bezier")){
+                    startActivity(new Intent(mContext,BezierMainActivity.class));
                 }
                 // 点击位置的显示
 //                Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
@@ -110,7 +113,7 @@ public class CommonFrameFragment extends BaseFragment {
         datas = new String[]{"图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
                 "网络请求:", "OKHttp", "Volley",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
-                "视图显示:", "Banner","PhotoView", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager", "OpenDanmaku", "CountdownView","JPush","ShareSDK","BaiduMapSDK",
+                "视图显示:", "Bezier","Banner","PhotoView", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager", "OpenDanmaku", "CountdownView","JPush","ShareSDK","BaiduMapSDK",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "ORMLite","GreenDao",
