@@ -27,6 +27,7 @@ import com.jackie.baigu.opendanmaku.OpenDanmakuMainActivity;
 import com.jackie.baigu.photoview.activity.PhotoViewMainActivity;
 import com.jackie.baigu.picasso.activity.PicassoActivity;
 import com.jackie.baigu.recyclerview.RecyclerViewActivity;
+import com.jackie.baigu.springindicator.SpringIndicatorMainActivity;
 import com.jackie.baigu.tablayout.activity.TabLayoutMainActivity;
 import com.jackie.baigu.universalvideoview.UniversalVideoViewActivity;
 import com.jackie.baigu.volley.VolleyActivity;
@@ -97,6 +98,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext,PhotoViewMainActivity.class));
                 }else if (data.toLowerCase().equals("bezier")){
                     startActivity(new Intent(mContext,BezierMainActivity.class));
+                }else if (data.toLowerCase().equals("springindicator")){
+                    startActivity(new Intent(mContext,SpringIndicatorMainActivity.class));
                 }
                 // 点击位置的显示
 //                Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
@@ -111,12 +114,12 @@ public class CommonFrameFragment extends BaseFragment {
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
         datas = new String[]{"图片加载:", "Glide", "Picasso", "ImageLoader", "Fresco",
-                "网络请求:", "OKHttp", "Volley",
+                "网络请求:", "OKHttp", "Volley","Retrofit",
                 "数据解析:", "NativeJsonPrase", "Gson", "FastJson",
-                "视图显示:", "Bezier","Banner","PhotoView", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager", "OpenDanmaku", "CountdownView","JPush","ShareSDK","BaiduMapSDK",
+                "视图显示:", "Bezier","Banner","PhotoView", "RecyclerView", "PullToRefresh", "UniversalVideoView", "JieCaoVideoPlayer", "TabLayout&ViewPager","SpringIndicator", "OpenDanmaku", "CountdownView","JPush","ZXing","ShareSDK","BaiduMapSDK",
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
-                "数据库:", "ORMLite","GreenDao",
+                "数据库:", "LitePal","ORMLite","GreenDao",
                 "综合框架:", "xUtils3", "Afinal",
                 "....."};
         //设置适配器

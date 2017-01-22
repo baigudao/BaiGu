@@ -126,6 +126,7 @@
         <activity android:name=".photoview.activity.SimpleSampleActivity" />
         <activity android:name=".photoview.activity.PicassoSampleActivity"/>
         <activity android:name=".bezier.BezierMainActivity"/>
+        <activity android:name=".springindicator.SpringIndicatorMainActivity"/>
     </application>
 
 </manifest>
