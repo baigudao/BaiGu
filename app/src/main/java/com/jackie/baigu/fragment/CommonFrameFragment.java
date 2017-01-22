@@ -101,6 +101,7 @@ public class CommonFrameFragment extends BaseFragment {
                 }else if (data.toLowerCase().equals("springindicator")){
                     startActivity(new Intent(mContext,SpringIndicatorMainActivity.class));
                 }
+
                 // 点击位置的显示
 //                Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
             }
