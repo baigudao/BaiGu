@@ -19,20 +19,23 @@ import java.util.List;
  * Created by Administrator on 2016/12/29.
  * 主页面
  */
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity {//这里注意：是继承自FragmentActivity
 
     private RadioGroup mRg_main;
+    /**
+     * 装Fragment的集合
+     */
     private List<BaseFragment> mBaseFragment;
 
     /**
-     * 选中的Fragment的对应的位置
+     * 选中Fragment对应的位置
      */
     private int position;
 
     /**
-     * 上次切换的Fragment
+     * 上次的Fragment
      */
-    private Fragment mContent;
+    private Fragment fromFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,9 +76,9 @@ public class MainActivity extends FragmentActivity {
                     break;
             }
             //根据位置得到对应的Fragment
-            BaseFragment to = getFragment();
-            //替换
-            switchFrament(mContent, to);
+            BaseFragment toFragment = getFragment();
+            //切换Fragment
+            switchFragment(fromFragment, toFragment);
         }
     }
 
@@ -84,9 +87,9 @@ public class MainActivity extends FragmentActivity {
      * @param from 刚显示的Fragment,马上就要被隐藏了
      * @param to   马上要切换到的Fragment，一会要显示
      */
-    private void switchFrament(Fragment from, Fragment to) {
+    private void switchFragment(Fragment from, Fragment to) {
         if (from != to) {
-            mContent = to;
+            fromFragment = to;
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             //才切换
             //判断有没有被添加
@@ -97,9 +100,7 @@ public class MainActivity extends FragmentActivity {
                     ft.hide(from);
                 }
                 //添加to
-                if (to != null) {
-                    ft.add(R.id.fl_content, to).commit();
-                }
+                ft.add(R.id.fl_content, to).commit();
             } else {
                 //to已经被添加
                 // from隐藏
@@ -107,9 +108,7 @@ public class MainActivity extends FragmentActivity {
                     ft.hide(from);
                 }
                 //显示to
-                if (to != null) {
-                    ft.show(to).commit();
-                }
+                ft.show(to).commit();
             }
         }
     }

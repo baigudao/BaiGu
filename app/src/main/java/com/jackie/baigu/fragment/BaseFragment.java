@@ -12,17 +12,29 @@ import android.view.ViewGroup;
  * Created by Administrator on 2016/12/29.
  */
 public abstract class BaseFragment extends Fragment {
+
     /**
      * 上下文
      */
     protected Context mContext;
+
+    /**
+     * 当该Fragment被创建的时候调用
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = getActivity();
     }
 
-
+    /**
+     * 当创建视图时被调用
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -30,11 +42,15 @@ public abstract class BaseFragment extends Fragment {
     }
 
     /**
-     * 强制子类重写，实现子类特有的ui
+     * 强制子类重写，实现子类特有的视图
      * @return
      */
     protected abstract View initView();
 
+    /**
+     * 当界面被创建时调用
+     * @param savedInstanceState
+     */
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);

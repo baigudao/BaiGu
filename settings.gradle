@@ -1,4 +1,4 @@
-include ':app', ':okhttputils', ':xutils', ':universalvideoview', ':opendanmaku', 'CountdownView_library', ':banner', ':jcvideoplayer-lib', ':PhotoView_sample', ':PhotoView_library', 'BezierDemo_app', ':lib', 'SpringIndicator_sample'
+include ':app', ':okhttputils', ':xutils', ':universalvideoview', ':opendanmaku', 'CountdownView_library', ':banner', ':jcvideoplayer-lib', ':PhotoView_sample', ':PhotoView_library', 'BezierDemo_app', ':SpringIndicator_lib', 'SpringIndicator_sample'
 
 include ':PullToRefresh_library'
 include ':pullToRefreshListFragment'
