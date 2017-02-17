@@ -17,14 +17,10 @@ ADDED from E:\android-as-ws\BaiGu\PullToRefresh_sample\src\main\AndroidManifest.
 		ADDED from E:\android-as-ws\BaiGu\PullToRefresh_sample\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from E:\android-as-ws\BaiGu\PullToRefresh_sample\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [BaiGu:PullToRefresh_library:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\PullToRefresh_library\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [BaiGu:pullToRefreshListFragment:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\pullToRefreshListFragment\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [BaiGu:PullToRefresh_library:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\PullToRefresh_library\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:23.4.0] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [BaiGu:pullToRefreshViewPager:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\pullToRefreshViewPager\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [BaiGu:PullToRefresh_library:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\PullToRefresh_library\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.4.0] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from E:\android-as-ws\BaiGu\PullToRefresh_sample\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from E:\android-as-ws\BaiGu\PullToRefresh_sample\src\main\AndroidManifest.xml
@@ -35,14 +31,10 @@ MERGED from [com.android.support:support-v4:23.4.0] E:\android-as-ws\BaiGu\PullT
 		INJECTED from E:\android-as-ws\BaiGu\PullToRefresh_sample\src\main\AndroidManifest.xml
 application
 ADDED from E:\android-as-ws\BaiGu\PullToRefresh_sample\src\main\AndroidManifest.xml:11:5-64:19
-MERGED from [BaiGu:PullToRefresh_library:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\PullToRefresh_library\unspecified\AndroidManifest.xml:11:5-20
 MERGED from [BaiGu:pullToRefreshListFragment:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\pullToRefreshListFragment\unspecified\AndroidManifest.xml:11:5-20
 MERGED from [BaiGu:PullToRefresh_library:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\PullToRefresh_library\unspecified\AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:support-v4:23.4.0] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [BaiGu:pullToRefreshViewPager:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\pullToRefreshViewPager\unspecified\AndroidManifest.xml:11:5-20
-MERGED from [BaiGu:PullToRefresh_library:unspecified] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\BaiGu\PullToRefresh_library\unspecified\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:support-v4:23.4.0] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] E:\android-as-ws\BaiGu\PullToRefresh_sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from E:\android-as-ws\BaiGu\PullToRefresh_sample\src\main\AndroidManifest.xml:14:9-41
 	android:hardwareAccelerated

@@ -5,7 +5,7 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:\android studio 2.1.0.0\gradle\gradle-2.10" />
+        <option name="gradleHome" value="D:\android studio 2.2.0.0\gradle\gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -28,28 +28,7 @@
             <option value="$PROJECT_DIR$/xutils" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/BezierDemo_app" />
-            <option value="$PROJECT_DIR$/CountdownView_library" />
-            <option value="$PROJECT_DIR$/PhotoView_library" />
-            <option value="$PROJECT_DIR$/PhotoView_sample" />
-            <option value="$PROJECT_DIR$/PullToRefresh_library" />
-            <option value="$PROJECT_DIR$/PullToRefresh_sample" />
-            <option value="$PROJECT_DIR$/SpringIndicator_lib" />
-            <option value="$PROJECT_DIR$/SpringIndicator_sample" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/banner" />
-            <option value="$PROJECT_DIR$/jcvideoplayer-lib" />
-            <option value="$PROJECT_DIR$/okhttputils" />
-            <option value="$PROJECT_DIR$/opendanmaku" />
-            <option value="$PROJECT_DIR$/pullToRefreshListFragment" />
-            <option value="$PROJECT_DIR$/pullToRefreshViewPager" />
-            <option value="$PROJECT_DIR$/universalvideoview" />
-            <option value="$PROJECT_DIR$/xutils" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

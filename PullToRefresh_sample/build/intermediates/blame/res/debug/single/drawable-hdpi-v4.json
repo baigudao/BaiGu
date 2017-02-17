@@ -1,13 +1,5 @@
 [
     {
-        "merged": "E:\\android-as-ws\\BaiGu\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\android.png",
-        "source": "E:\\android-as-ws\\BaiGu\\PullToRefresh_sample\\src\\main\\res\\drawable-hdpi\\android.png"
-    },
-    {
-        "merged": "E:\\android-as-ws\\BaiGu\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon.png",
-        "source": "E:\\android-as-ws\\BaiGu\\PullToRefresh_sample\\src\\main\\res\\drawable-hdpi\\icon.png"
-    },
-    {
         "merged": "E:\\android-as-ws\\BaiGu\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\indicator_arrow.png",
         "source": "E:\\android-as-ws\\BaiGu\\PullToRefresh_sample\\build\\intermediates\\exploded-aar\\BaiGu\\PullToRefresh_library\\unspecified\\res\\drawable-hdpi-v4\\indicator_arrow.png"
     },
