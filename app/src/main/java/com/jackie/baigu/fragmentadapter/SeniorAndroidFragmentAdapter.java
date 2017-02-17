@@ -8,17 +8,18 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 /**
- * 作用：常用框架的Frament
+ * 作用：Android高级的Frament
  */
-public class SoundCodeFragmentAdapter extends BaseAdapter {
+public class SeniorAndroidFragmentAdapter extends BaseAdapter {
 
     private final Context mContext;
     private final String[] mDatas;
 
-    public SoundCodeFragmentAdapter(Context context, String[] datas){
+    public SeniorAndroidFragmentAdapter(Context context, String[] datas) {
         this.mContext = context;
         this.mDatas = datas;
     }
+
     @Override
     public int getCount() {
         return mDatas.length;
@@ -37,7 +38,7 @@ public class SoundCodeFragmentAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView textView = new TextView(mContext);
-        textView.setPadding(10,10,0,10);
+        textView.setPadding(10, 10, 0, 10);
         textView.setTextColor(Color.BLUE);
         textView.setTextSize(18);
         textView.setText(mDatas[position]);

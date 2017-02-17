@@ -1,12 +1,5 @@
 package com.jackie.baigu.fragmentadapter;
 
-/**
- * Created by jackie on 2017/2/17 22:46.
- * QQ : 971060378
- * Used as : xxx
- */
-
-
 import android.content.Context;
 import android.graphics.Color;
 import android.view.View;
@@ -15,14 +8,14 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 /**
- * 作用：常用框架的Fragment
+ * 作用：Android基础的Fragment
  */
-public class CommonFrameFragmentAdapter extends BaseAdapter {
+public class BaseAndroidFragmentAdapter extends BaseAdapter {
 
     private final Context mContext;
     private final String[] mDatas;
 
-    public CommonFrameFragmentAdapter(Context context, String[] datas) {
+    public BaseAndroidFragmentAdapter(Context context, String[] datas) {
         this.mContext = context;
         this.mDatas = datas;
     }

@@ -6,19 +6,17 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
-
 /**
- * 作用：自定义Fragment
+ * 作用：Android基础Fragment
  */
-public class CustomFragment extends BaseFragment {
+public class BaseAndroidFragment extends BaseFragment {
 
-
-    private static final String TAG = CustomFragment.class.getSimpleName();//"CommonFrameFragment"
+    private static final String TAG = BaseAndroidFragment.class.getSimpleName();//"BaseAndroidFragment"
     private TextView textView;
 
     @Override
     protected View initView() {
-        Log.e(TAG,"自定义Fragment页面被初始化了...");
+        Log.e(TAG, "Android基础Fragment页面被初始化了...");
         textView = new TextView(mContext);
         textView.setTextSize(20);
         textView.setGravity(Gravity.CENTER);
@@ -29,7 +27,7 @@ public class CustomFragment extends BaseFragment {
     @Override
     protected void initData() {
         super.initData();
-        Log.e(TAG, "自定义Fragment数据被初始化了...");
-        textView.setText("自定义页面");
+        Log.e(TAG, "Android基础Fragment数据被初始化了...");
+        textView.setText("Android基础页面");
     }
 }

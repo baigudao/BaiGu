@@ -7,10 +7,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
 
 import com.jackie.baigu.fragment.BaseFragment;
+import com.jackie.baigu.fragment.BaseAndroidFragment;
 import com.jackie.baigu.fragment.CommonFrameFragment;
-import com.jackie.baigu.fragment.CustomFragment;
 import com.jackie.baigu.fragment.OtherFragment;
-import com.jackie.baigu.fragment.SoundCodeFragment;
+import com.jackie.baigu.fragment.SeniorAndroidFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -125,9 +125,9 @@ public class MainActivity extends FragmentActivity {//这里注意：是继承�
 
     private void initFragment() {
         mBaseFragment = new ArrayList<>();
+        mBaseFragment.add(new BaseAndroidFragment());//Android基础Fragment
+        mBaseFragment.add(new SeniorAndroidFragment());//Android高级Fragment
         mBaseFragment.add(new CommonFrameFragment());//常用框架Fragment
-        mBaseFragment.add(new SoundCodeFragment());//源码Fragment
-        mBaseFragment.add(new CustomFragment());//自定义控件Fragment
         mBaseFragment.add(new OtherFragment());//其他Fragment
     }
 

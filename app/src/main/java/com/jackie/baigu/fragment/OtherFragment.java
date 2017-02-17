@@ -8,12 +8,12 @@ import android.widget.TextView;
 
 
 /**
- * 作用：其他Fragment
+ * 作用：其他Fragment：包括面试杂谈
  */
 public class OtherFragment extends BaseFragment {
 
 
-    private static final String TAG = OtherFragment.class.getSimpleName();//"CommonFrameFragment"
+    private static final String TAG = OtherFragment.class.getSimpleName();//"OtherFragment"
     private TextView textView;
 
     @Override

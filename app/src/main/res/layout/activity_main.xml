@@ -29,19 +29,19 @@
             android:id="@+id/rb_common_frame"
             style="@style/bottom_tag_style"
             android:drawableTop="@drawable/rb_common_frame_selector"
-            android:text="常用框架" />
+            android:text="Android基础" />
 
         <RadioButton
             android:id="@+id/rb_third_party"
             style="@style/bottom_tag_style"
             android:drawableTop="@drawable/rb_third_party_selector"
-            android:text="源码" />
+            android:text="Android高级" />
 
         <RadioButton
             android:id="@+id/rb_custom"
             style="@style/bottom_tag_style"
             android:drawableTop="@drawable/rb_custom_selector"
-            android:text="自定义控件" />
+            android:text="常用框架" />
 
         <RadioButton
             android:id="@+id/rb_other"
