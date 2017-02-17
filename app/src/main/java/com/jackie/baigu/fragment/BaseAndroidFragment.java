@@ -11,6 +11,7 @@ import android.widget.TextView;
  */
 public class BaseAndroidFragment extends BaseFragment {
 
+
     private static final String TAG = BaseAndroidFragment.class.getSimpleName();//"BaseAndroidFragment"
     private TextView textView;
 
