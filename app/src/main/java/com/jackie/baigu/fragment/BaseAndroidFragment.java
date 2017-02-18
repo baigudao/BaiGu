@@ -1,34 +1,39 @@
 package com.jackie.baigu.fragment;
 
-import android.graphics.Color;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ListView;
+
+import com.jackie.baigu.R;
+import com.jackie.baigu.fragmentadapter.BaseAndroidFragmentAdapter;
 
 /**
  * 作用：Android基础Fragment
  */
 public class BaseAndroidFragment extends BaseFragment {
 
-
     private static final String TAG = BaseAndroidFragment.class.getSimpleName();//"BaseAndroidFragment"
-    private TextView textView;
+    private ListView listview;
+    private String[] datas;
+    private BaseAndroidFragmentAdapter adapter;
 
     @Override
     protected View initView() {
         Log.e(TAG, "Android基础Fragment页面被初始化了...");
-        textView = new TextView(mContext);
-        textView.setTextSize(20);
-        textView.setGravity(Gravity.CENTER);
-        textView.setTextColor(Color.RED);
-        return textView;
+        //加载布局视图
+        View view = View.inflate(mContext, R.layout.fragment_base_android, null);
+        listview = (ListView) view.findViewById(R.id.listview);
+        return view;
     }
 
     @Override
     protected void initData() {
         super.initData();
         Log.e(TAG, "Android基础Fragment数据被初始化了...");
-        textView.setText("Android基础页面");
+        //准备数据
+        datas = new String[]{"Activity", "Service", "....."};
+        //设置适配器
+        adapter = new BaseAndroidFragmentAdapter(mContext, datas);
+        listview.setAdapter(adapter);
     }
 }

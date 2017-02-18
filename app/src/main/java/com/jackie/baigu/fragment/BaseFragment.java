@@ -20,6 +20,7 @@ public abstract class BaseFragment extends Fragment {
 
     /**
      * 当该Fragment被创建的时候调用
+     *
      * @param savedInstanceState
      */
     @Override
@@ -30,6 +31,7 @@ public abstract class BaseFragment extends Fragment {
 
     /**
      * 当创建视图时被调用
+     *
      * @param inflater
      * @param container
      * @param savedInstanceState
@@ -43,12 +45,14 @@ public abstract class BaseFragment extends Fragment {
 
     /**
      * 强制子类重写，实现子类特有的视图
+     *
      * @return
      */
     protected abstract View initView();
 
     /**
      * 当界面被创建时调用
+     *
      * @param savedInstanceState
      */
     @Override

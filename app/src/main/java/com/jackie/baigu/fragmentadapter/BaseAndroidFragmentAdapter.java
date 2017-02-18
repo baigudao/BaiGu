@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 /**
- * 作用：Android基础的Fragment
+ * 作用：Android基础的FragmentAdapter
  */
 public class BaseAndroidFragmentAdapter extends BaseAdapter {
 
@@ -20,6 +20,10 @@ public class BaseAndroidFragmentAdapter extends BaseAdapter {
         this.mDatas = datas;
     }
 
+    /**
+     * item的数量
+     * @return
+     */
     @Override
     public int getCount() {
         return mDatas.length;

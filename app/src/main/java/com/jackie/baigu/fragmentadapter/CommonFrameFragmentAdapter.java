@@ -15,7 +15,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 /**
- * 作用：常用框架的Fragment
+ * 作用：常用框架的FragmentAdapter
  */
 public class CommonFrameFragmentAdapter extends BaseAdapter {
 
