@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import io.rong.imlib.RongIMClient;
+
 /**
  * Created by Administrator on 2017/1/3.
  */
@@ -41,6 +43,9 @@ public class MyApplication extends Application {
 
         //初始化Banner
         initBanner();
+
+        //初始化RongCloud
+        RongIMClient.init(this);
     }
 
     private void initXUtils() {

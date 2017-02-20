@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/PhotoView_sample/PhotoView_sample.iml" filepath="$PROJECT_DIR$/PhotoView_sample/PhotoView_sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/PullToRefresh_library/PullToRefresh_library.iml" filepath="$PROJECT_DIR$/PullToRefresh_library/PullToRefresh_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/PullToRefresh_sample/PullToRefresh_sample.iml" filepath="$PROJECT_DIR$/PullToRefresh_sample/PullToRefresh_sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RongCloudIMKit/RongCloudIMKit.iml" filepath="$PROJECT_DIR$/RongCloudIMKit/RongCloudIMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RongCloudIMLib/RongCloudIMLib.iml" filepath="$PROJECT_DIR$/RongCloudIMLib/RongCloudIMLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringIndicator_lib/SpringIndicator_lib.iml" filepath="$PROJECT_DIR$/SpringIndicator_lib/SpringIndicator_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringIndicator_sample/SpringIndicator_sample.iml" filepath="$PROJECT_DIR$/SpringIndicator_sample/SpringIndicator_sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
@@ -18,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/opendanmaku/opendanmaku.iml" filepath="$PROJECT_DIR$/opendanmaku/opendanmaku.iml" />
       <module fileurl="file://$PROJECT_DIR$/pullToRefreshListFragment/pullToRefreshListFragment.iml" filepath="$PROJECT_DIR$/pullToRefreshListFragment/pullToRefreshListFragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/pullToRefreshViewPager/pullToRefreshViewPager.iml" filepath="$PROJECT_DIR$/pullToRefreshViewPager/pullToRefreshViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rongcloudapp/rongcloudapp.iml" filepath="$PROJECT_DIR$/rongcloudapp/rongcloudapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/universalvideoview/universalvideoview.iml" filepath="$PROJECT_DIR$/universalvideoview/universalvideoview.iml" />
       <module fileurl="file://$PROJECT_DIR$/xutils/xutils.iml" filepath="$PROJECT_DIR$/xutils/xutils.iml" />
     </modules>

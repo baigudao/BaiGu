@@ -27,6 +27,7 @@ import com.jackie.baigu.photoview.activity.PhotoViewMainActivity;
 import com.jackie.baigu.picasso.activity.PicassoActivity;
 import com.jackie.baigu.pulltorefresh.PullToRefreshMainActivity;
 import com.jackie.baigu.recyclerview.RecyclerViewActivity;
+import com.jackie.baigu.rongcloud.RongCloudMainActivity;
 import com.jackie.baigu.springindicator.SpringIndicatorMainActivity;
 import com.jackie.baigu.tablayout.activity.TabLayoutMainActivity;
 import com.jackie.baigu.universalvideoview.UniversalVideoViewActivity;
@@ -101,6 +102,8 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext, BezierMainActivity.class));
                 } else if (data.toLowerCase().equals("springindicator")) {
                     startActivity(new Intent(mContext, SpringIndicatorMainActivity.class));
+                }else if (data.toLowerCase().equals("rongcloudsdk")){
+                    startActivity(new Intent(mContext, RongCloudMainActivity.class));
                 }
             }
         });
@@ -119,7 +122,7 @@ public class CommonFrameFragment extends BaseFragment {
                 "依赖注入:", "ButterKnife",
                 "事件总线:", "EventBus",
                 "数据库:", "LitePal", "ORMLite", "GreenDao",
-                "综合框架:", "xUtils3", "Afinal",
+                "综合框架:", "xUtils3", "Afinal","RongCloudSDK",
                 "....."};
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext, datas);

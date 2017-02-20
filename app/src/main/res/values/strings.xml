@@ -6,4 +6,48 @@
     <string name="send">send</string>
     <string name="text_hint">input text here</string>
     <string name="empty_prompt">please input text</string>
+    
+    <string name="android_studio_configure">
+        1，界面设置：
+Settings --> Appearance --> Theme ，选择 Darcula 主题即可。
+
+2，字体设置：
+a，系统字体设置
+Settings --> Appearance ，勾选 Override default fonts by (not recommended) ，选择一款支持中文的字体即可。我使用的是 微软雅黑 Size 22，效果不错。
+b，编程字体设置
+此部分会修改编辑器的字体，包含所有的文件显示的字体。
+Settings --> Editor --> Colors and Fonts --> Font 。默认系统显示的 Scheme 为 Defualt ，你是不能编辑的，你需要点击右侧的 Save As... ，保存一份自己的设置，并在当中设置。之后，
+在 Editor Font 中即可设置字体。Show only monospaced fonts 表示只显示等宽字体，一般来说，编程等宽字体使用较多，且效果较好。
+
+3，代码格式设置：
+如果你想设置你的代码格式化时显示的样式，你可以这么设置。
+Settings --> Code Style 。同样的， Scheme 中默认的配置，你无法修改，你需要创建一份自己的配置。
+
+4，默认文件编码：
+Settings --> File Encodings 。建议将 IDE Encoding 、 Project Encoding 、 Properties Fiels 都设置成统一的编码。
+
+5，快捷键
+Settings --> Keymap 。建议不使用其他IDE的快捷键，而是使用Android Studio的快捷键。当你想设置在某一个快捷键配置上进行更改，你需要点击 copy 创建一个自己的快捷键，并在上面进行
+设置。Android Studio默认的快捷键中，代码提示为 Ctrl+Space ，会与系统输入法快捷键冲突，需要特殊设置。Main menu --> Code --> Completion --> Basic ，更改为你想替换的快捷键组
+合。
+
+6，其他设置：
+a，Android Studio编辑区域，在中部会有一条竖线。这条线是用以提醒程序员，一行的代码长度最好不要超过这条线。如果你不想显示这条线，可以这么设置。
+Settings --> Editor --> Appearance ，取消勾选 Show right margin (configured in Code Style options) 。
+b，显示行号
+Settings --> Editor --> Appearance ，勾选 Show line numbers 。
+c，显示空格。我习惯显示空格，这样就能看出缩进是 tab 缩进还是空格缩进。建议使用空格缩进。
+Settings --> Editor --> Appearance ，勾选 Show whitespaces 。
+d，如果你使用 Git 进行版本控制，你需要设置 Git 的安装文件目录。
+Settings --> Version Control --> Git ，在右侧中选择你的 Git 的安装目录。
+e，插件。Android Studio和Eclipse一样，都是支持插件的。Android Studio默认自带了一些插件，如果你不使用某些插件，你可以禁用它。
+Settings --> Plugins ，右侧会显示出已经安装的插件列表。取消勾选即可禁用插件。
+f，设置注释模板
+/**
+ * Created by jackie on ${DATE} ${TIME}.
+ * QQ : 971060378
+ * Used as : xxx
+ */
+    </string>
+
 </resources>

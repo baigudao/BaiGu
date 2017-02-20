@@ -15,6 +15,8 @@
             <option value="$PROJECT_DIR$/PhotoView_sample" />
             <option value="$PROJECT_DIR$/PullToRefresh_library" />
             <option value="$PROJECT_DIR$/PullToRefresh_sample" />
+            <option value="$PROJECT_DIR$/RongCloudIMKit" />
+            <option value="$PROJECT_DIR$/RongCloudIMLib" />
             <option value="$PROJECT_DIR$/SpringIndicator_lib" />
             <option value="$PROJECT_DIR$/SpringIndicator_sample" />
             <option value="$PROJECT_DIR$/app" />
@@ -24,6 +26,7 @@
             <option value="$PROJECT_DIR$/opendanmaku" />
             <option value="$PROJECT_DIR$/pullToRefreshListFragment" />
             <option value="$PROJECT_DIR$/pullToRefreshViewPager" />
+            <option value="$PROJECT_DIR$/rongcloudapp" />
             <option value="$PROJECT_DIR$/universalvideoview" />
             <option value="$PROJECT_DIR$/xutils" />
           </set>
